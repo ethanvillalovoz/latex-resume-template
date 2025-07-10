@@ -24,7 +24,7 @@ This template emphasizes:
 
 ## 🖼️ Visuals
 
-![Resume Preview](./preview.png)
+![Resume Preview](docs/preview.png)
 
 ---
 
@@ -43,6 +43,14 @@ This template emphasizes:
 
 ---
 
+## 📖 About the Template
+
+Curious about the design philosophy, technical choices, and why this template works so well for technical roles?  
+
+See [docs/ABOUT.md](docs/ABOUT.md) for a deep dive into the reasoning behind the layout, ATS compatibility, and customization features.
+
+---
+
 ## ⚡ QuickStart Guide
 
 1. **Clone the repo:**
@@ -53,18 +61,20 @@ This template emphasizes:
 
 2. **Build the resume locally:**
    ```bash
+   cd src
    pdflatex resume.tex
    ```
+   The output `resume.pdf` will be generated in the `src/` directory.
 
 3. **Or use Overleaf:**
-   - Upload `resume.tex` to [Overleaf](https://overleaf.com/)
+   - Upload `src/resume.tex` to [Overleaf](https://overleaf.com/)
    - Edit and download your PDF
 
 ---
 
 ## 🔬 Advanced Usage
 
-- **Customize sections**: Edit or add sections in `resume.tex` as needed.
+- **Customize sections**: Edit or add sections in `src/resume.tex` as needed.
 - **Add new commands**: Define your own LaTeX commands for repeated patterns.
 - **Change fonts or colors**: Modify the preamble to adjust style.
 - **ATS optimization**: Avoid images or graphics in the main content.
@@ -73,7 +83,7 @@ This template emphasizes:
 
 ## ⚙️ Configuration
 
-- **Contact Info**: Update your name, email, phone, and links at the top of `resume.tex`.
+- **Contact Info**: Update your name, email, phone, and links at the top of `src/resume.tex`.
 - **Section Content**: Use `\resumeItem{}` for bullet points and `\resumeSubheading{}` for roles/education.
 - **Bold Technologies**: Use `\textbf{}` for highlighting tools and languages.
 
@@ -83,6 +93,7 @@ This template emphasizes:
 
 To verify your LaTeX installation and template build:
 ```bash
+cd src
 pdflatex resume.tex
 # Check for resume.pdf output and no errors in the log
 ```
@@ -93,11 +104,19 @@ pdflatex resume.tex
 
 ```
 latex-resume-template/
-├── resume.tex        # Main LaTeX source file
-├── resume.pdf        # Compiled sample (not versioned)
-├── preview.png       # Screenshot preview
-├── LICENSE           # MIT License
-└── README.md         # This file
+├── .github/                 # GitHub templates and workflows
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
+├── docs/                    # Documentation and preview
+│   ├── ABOUT.md
+│   ├── preview.png
+│   └── resume.pdf           # Compiled sample (not versioned)
+├── src/                     # LaTeX source files
+│   └── resume.tex
+├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
 ```
 
 ---
