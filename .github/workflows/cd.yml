@@ -11,13 +11,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up LaTeX
-        uses: latex-actions/setup-latex@v1
-
       - name: Compile resume.tex
-        run: |
-          cd src
-          pdflatex resume.tex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          working_directory: src
 
       - name: Deploy PDF to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
