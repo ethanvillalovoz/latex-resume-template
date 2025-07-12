@@ -1,4 +1,4 @@
-name: Build LaTeX Resume
+name: CI
 
 on:
   push:

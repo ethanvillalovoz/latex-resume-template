@@ -1,4 +1,4 @@
-name: Deploy Resume PDF to GitHub Pages
+name: CD
 
 on:
   push:
