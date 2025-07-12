@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up LaTeX
-        uses: latex-actions/setup-latex@v2
+        uses: latex-actions/setup-latex@v1
 
       - name: Compile resume.tex
         run: |
