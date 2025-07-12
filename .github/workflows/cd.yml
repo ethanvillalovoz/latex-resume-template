@@ -1,0 +1,31 @@
+name: Deploy Resume PDF to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up TeX Live
+        uses: teatimeguest/setup-texlive-action@v2
+
+      - name: Compile resume.tex
+        run: |
+          cd src
+          pdflatex resume.tex
+
+      - name: Deploy PDF to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: src
+          keep_files: false
+          destination_dir: .
+          # Only resume.pdf will be published at the root of the Pages site
+          exclude_assets: |
+            !resume.pdf
