@@ -3,6 +3,7 @@
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![Overleaf Compatible](https://img.shields.io/badge/overleaf-supported-success)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)
 
 ---
 
@@ -40,6 +41,7 @@ This template emphasizes:
 - **LaTeX** (core typesetting)
 - **Packages**: `fullpage`, `titlesec`, `marvosym`, `fontawesome5`, `tabularx`, `multicol`, `hyperref`, `fancyhdr`, `enumitem`, `geometry`
 - **PDF output**: ATS-friendly, machine-readable
+- **CI/CD**: Automated PDF build and deployment using GitHub Actions
 
 ---
 
@@ -106,6 +108,7 @@ pdflatex resume.tex
 latex-resume-template/
 ├── .github/                 # GitHub templates and workflows
 │   ├── ISSUE_TEMPLATE/
+│   ├── workflows/           # CI/CD workflows for automated PDF build & deploy
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── docs/                    # Documentation and preview
 │   ├── ABOUT.md
@@ -123,9 +126,9 @@ latex-resume-template/
 
 ## 🛣️ Roadmap
 
+- [x] Add CI/CD for automated PDF builds and deployment
 - [ ] Add more resume section templates (e.g., Publications, Awards)
 - [ ] Provide alternate color schemes
-- [ ] Add CI for automated PDF builds
 - [ ] Expand documentation (FAQ, troubleshooting)
 
 ---
