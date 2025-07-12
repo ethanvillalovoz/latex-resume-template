@@ -11,8 +11,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up TeX Live
-        uses: teatimeguest/setup-texlive-action@v2
+      - name: Set up LaTeX
+        uses: latex-actions/setup-latex@v2
 
       - name: Compile resume.tex
         run: |
@@ -26,6 +26,5 @@ jobs:
           publish_dir: src
           keep_files: false
           destination_dir: .
-          # Only resume.pdf will be published at the root of the Pages site
           exclude_assets: |
             !resume.pdf
