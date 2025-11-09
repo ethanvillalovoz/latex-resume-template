@@ -9,7 +9,9 @@
 
 ## 🚀 Introduction
 
-A clean, ATS-friendly, and professional LaTeX resume template designed for clarity, impact, and easy customization. Perfect for students, early-career professionals, and anyone who wants a modern, one-page resume.
+A clean, ATS-friendly, and professional LaTeX resume template designed for clarity, impact, and easy customization.  
+
+Perfect for students, early-career professionals, and anyone who wants a modern, one-page resume — all editable directly on **Overleaf**.
 
 ---
 
@@ -19,7 +21,7 @@ This template emphasizes:
 - **Minimalist, one-page layout** for maximum readability
 - **Bold tech stacks** and modular bullet points for easy scanning
 - **Machine-readable PDF output** for ATS compatibility
-- **Easy customization** with clear LaTeX commands
+- **Fully editable on Overleaf** — no local setup required
 
 ---
 
@@ -29,19 +31,12 @@ This template emphasizes:
 
 ---
 
-## 📦 Prerequisites
-
-- **LaTeX distribution**: [TeX Live](https://www.tug.org/texlive/) (Linux/Windows) or [MacTeX](https://tug.org/mactex/) (macOS)
-- (Optional) [Overleaf](https://overleaf.com/) account for online editing
-
----
-
 ## 🛠️ Technologies Used
 
 - **LaTeX** (core typesetting)
 - **Packages**: `fullpage`, `titlesec`, `marvosym`, `fontawesome5`, `tabularx`, `multicol`, `hyperref`, `fancyhdr`, `enumitem`, `geometry`
 - **PDF output**: ATS-friendly, machine-readable
-- **CI/CD**: Automated PDF build and deployment using GitHub Actions
+- **Platform**: Overleaf for online editing and compilation
 
 ---
 
@@ -51,54 +46,36 @@ Curious about the design philosophy, technical choices, and why this template wo
 
 See [docs/ABOUT.md](docs/ABOUT.md) for a deep dive into the reasoning behind the layout, ATS compatibility, and customization features.
 
+See [docs/COMPANIES.md](docs/COMPANIES.md) for a list of companies where this resume has earned me interview opportunities for both internships and full-time roles.
+
 ---
 
-## ⚡ QuickStart Guide
+## ⚡ QuickStart Guide (Overleaf)
 
-1. **Clone the repo:**
+1. **Download or clone the repository:**
    ```bash
    git clone https://github.com/ethanvillalovoz/latex-resume-template.git
-   cd latex-resume-template
    ```
+   or simply click **“Download ZIP”** from GitHub.
 
-2. **Build the resume locally:**
-   ```bash
-   cd src
-   pdflatex resume.tex
-   ```
-   The output `resume.pdf` will be generated in the `src/` directory.
+2. **Upload to Overleaf:**
+   - Go to [Overleaf](https://overleaf.com/)
+   - Create a **New Project → Upload Project**
+   - Upload the entire `src/` folder (or just `src/resume.tex` if you prefer)
 
-3. **Or use Overleaf:**
-   - Upload `src/resume.tex` to [Overleaf](https://overleaf.com/)
-   - Edit and download your PDF
-
----
-
-## 🔬 Advanced Usage
-
-- **Customize sections**: Edit or add sections in `src/resume.tex` as needed.
-- **Add new commands**: Define your own LaTeX commands for repeated patterns.
-- **Change fonts or colors**: Modify the preamble to adjust style.
-- **ATS optimization**: Avoid images or graphics in the main content.
+3. **Edit and compile:**
+   - Modify your details directly in `resume.tex`
+   - Click **Recompile** to generate your PDF
+   - Download the final `resume.pdf`
 
 ---
 
-## ⚙️ Configuration
+## 🔧 Customization
 
-- **Contact Info**: Update your name, email, phone, and links at the top of `src/resume.tex`.
-- **Section Content**: Use `\resumeItem{}` for bullet points and `\resumeSubheading{}` for roles/education.
-- **Bold Technologies**: Use `\textbf{}` for highlighting tools and languages.
-
----
-
-## 🧪 Automated Test
-
-To verify your LaTeX installation and template build:
-```bash
-cd src
-pdflatex resume.tex
-# Check for resume.pdf output and no errors in the log
-```
+- **Contact Info**: Update your name, email, phone, and links at the top of `resume.tex`
+- **Section Content**: Use `\resumeItem{}` for bullet points and `\resumeSubheading{}` for roles or education
+- **Bold Technologies**: Use `\textbf{}` to highlight programming languages or tools
+- **Style Adjustments**: Modify the preamble to change fonts, spacing, or colors
 
 ---
 
@@ -126,19 +103,20 @@ latex-resume-template/
 
 ## 🛣️ Roadmap
 
-- [x] Add CI/CD for automated PDF builds and deployment
-- [ ] Add more resume section templates (e.g., Publications, Awards)
-- [ ] Provide alternate color schemes
+- [x] Overleaf-only version for easier use  
+- [ ] Add more resume section templates (e.g., Publications, Awards)  
+- [ ] Provide alternate color schemes  
 - [ ] Expand documentation (FAQ, troubleshooting)
 
 ---
 
 ## 🤝 Contribution
 
-Contributions are welcome! To contribute:
-- Fork the repo and create a new branch
-- Make your changes (improve template, docs, or add features)
-- Open a pull request with a clear description
+Contributions are welcome!  
+To contribute:
+1. Fork the repo and create a new branch  
+2. Make your improvements (e.g., design tweaks, doc edits)  
+3. Open a pull request with a clear description  
 
 For more details, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -153,4 +131,5 @@ MIT License — free to use, modify, and share. Attribution appreciated, but not
 ## 💬 Contact
 
 If this template helps you land an interview or job, I’d love to hear about it!  
-Feel free to reach out: ethan.villalovoz@gmail.com
+
+Reach out at **ethan.villalovoz@gmail.com**
