@@ -60,15 +60,11 @@
 % Custom Commands
 %-------------------------
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{0pt}}
-  }
+  \item\small{{#1 \vspace{0pt}}}
 }
 
 \newcommand{\classesList}[4]{
-  \item\small{
-    {#1 #2 #3 #4 \vspace{-2pt}}
-  }
+  \item\small{{#1 #2 #3 #4 \vspace{-2pt}}}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -114,11 +110,11 @@
 \begin{center}
   {\Large \scshape Ethan Villalovoz} \\[2mm]
   \footnotesize
-  (530) 558-1523 $|$ 
-  \href{mailto:ethan.villalovoz@gmail.com}{ethan.villalovoz@gmail.com} $|$
-  \href{https://www.linkedin.com/in/evillalovoz27/}{linkedin.com/in/evillalovoz27} \\
-  \href{https://github.com/ethanvillalovoz}{github.com/ethanvillalovoz} $|$
-  \href{https://ethanvillalovoz.vercel.app/}{ethanvillalovoz.vercel.app} $|$
+  \href{tel:+15305581523}{\textcolor{blue}{+1 (530) 558-1523}} $|$
+  \href{mailto:ethan.villalovoz@gmail.com}{\textcolor{blue}{ethan.villalovoz@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/evillalovoz27/}{\textcolor{blue}{linkedin.com/in/evillalovoz27}} \\
+  \href{https://github.com/ethanvillalovoz}{\textcolor{blue}{github.com/ethanvillalovoz}} $|$
+  \href{https://ethanvillalovoz.vercel.app/}{\textcolor{blue}{ethanvillalovoz.vercel.app}} $|$
   US~Citizen
   \vspace{-8pt}
 \end{center}
@@ -129,29 +125,41 @@
 \section{Education}
 \resumeSubHeadingListStart
   \resumeSubheading
+    {Georgia Institute of Technology, College of Computing}{Jan 2026 - Dec 2027}
+    {Master of Science in Computer Science  
+    | Computational Perception and Robotics, GPA: 4.0/4.0
+    }{Atlanta, GA}
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+%---------------------
+\resumeSubHeadingListStart
+  \resumeSubheading
     {Washington State University, Honors College}{Aug 2021 - May 2025}
-    {Bachelor of Science in Computer Science | Minor Mathematics, GPA: 3.94/4.0 }{Pullman, WA}
+    {Bachelor of Science in Computer Science | Minor in Mathematics, GPA: 3.94/4.0 
+    }{Pullman, WA}
 \resumeSubHeadingListEnd
 
 \resumeItemListStart
-  \resumeItem{Senior Design Project: \href{https://github.com/mollyiverson/ACME10-HE-RAGApp}{Retrieval-Augmented Generation (RAG)} App Using Knowledge Graph and Vector Search}
+  \resumeItem{Senior Design Project: \href{https://github.com/mollyiverson/ACME10-HE-RAGApp}{\textcolor{blue}{Retrieval-Augmented Generation (RAG)}} App Using Knowledge Graph and Vector Search}
   \vspace{-7pt}
   \resumeItem{Relevant Coursework: Artificial Intelligence, Machine Learning, Object-Oriented Programming, Probability \& Statistics, Data Mining, Design \& Analysis Algorithms, Optimization, Software Engineering, Data Structures, Linear Algebra}
 \resumeItemListEnd
 
-\vspace{-12pt}
+\vspace{-8pt}
 
 %-------------------------
 % Technical Skills
 %-------------------------
 \section{Technical Skills}
-
 \small{
-  \textbf{Languages}{: Python, C/C++, SQL, JavaScript, TypeScript, HTML/CSS, C\#, MATLAB, R, Haskell, Bash, Swift} \\[1mm]
-  \textbf{Developer Tools}{: Git, GitHub, GitLab, Docker, Conda, AWS, Google Colab, Vercel, SQLite, VS Code, Xcode, Rider, CLion}\\[1mm]
-  \textbf{Libraries/Frameworks}{: PyTorch, TensorFlow, scikit-learn, Hugging Face, OpenAI Gym, NumPy, Pandas, OpenCV, FastAPI, Flask, SQLAlchemy, Pydantic, REST API, React, Next.js, Tailwind CSS, Avalonia, .NET, ROS, Linux}
+  \textbf{Languages}{: Python, C/C++, SQL, JavaScript, TypeScript, HTML/CSS, C\#, MATLAB, R, Haskell, Swift}\\[1mm]
+  \textbf{Developer Tools}{: Git, GitHub, GitHub Actions, Docker, Bash, Conda, AWS, Postman, Jupyter, MLflow, DVC, MySQL}\\[1mm]
+  \textbf{Libraries/Frameworks}{: React, Next.js, FastAPI, 
+  PyTorch, 
+  Pandas, LangChain, Hugging Face Transformers, OpenCV}
 }
-
 \vspace{-4pt}
 
 %-------------------------
@@ -160,34 +168,37 @@
 \section{Work Experience}
 \resumeSubHeadingListStart
 
-  % Meta x MLH
   \resumeSubheading
-    {Meta x MLH}{Jun 2025 - Present}
-    {\href{https://fellowship.mlh.io/programs/production-engineering-sre}{Production Engineering Fellow}}{Remote}
+    {Microsoft}{Summer 2026}
+    {{{Incoming Software Engineer Intern}}}{Redmond, WA} 
+
+  \resumeSubheading
+    {Meta \& Major League Hacking}{Jun 2025 - Sep 2025}
+    {{{Production Engineering Fellow}}}{Remote} 
   \resumeItemListStart
-    \resumeItem{Built and deployed a responsive full-stack personal portfolio web application using \textbf{HTML/CSS}, \textbf{Flask}, \textbf{Jinja2}, and \textbf{Leaflet.js}, hosted on a \textbf{DigitalOcean} VPS, enhancing real-world software engineering and DevOps skills}
-    \resumeItem{Configured a \textbf{CentOS}-based server environment, implemented secure \textbf{SSH key authentication}, and automated DNS management with \textbf{DuckDNS}, enabling persistent availability and secure access to deployed web applications}
+    \resumeItem{Deployed a full-stack \textbf{Flask portfolio app} with \textbf{Docker} on a \textbf{DigitalOcean VPS}, enabling persistent deployment and ensuring \textbf{100\% uptime after reboot} through automated systemd services for stable production reliability}
+    \resumeItem{Integrated a \textbf{MySQL database} and configured \textbf{Nginx reverse proxy with HTTPS and rate limiting}, strengthening backend scalability, improving security, and enhancing reliability for secure production environments}
+    \resumeItem{Automated deployments with a \textbf{CI/CD pipeline} using \textbf{GitHub Actions} and \textbf{Bash}, cutting manual deployment time by \textbf{80\%} and ensuring every push was tested, containerized, and deployed for efficient production workflows}
+    \resumeItem{Implemented a comprehensive \textbf{monitoring stack} with \textbf{Prometheus}, \textbf{Grafana}, and \textbf{Linux CLI tools}, uncovering bottlenecks under load and optimizing resource allocation for consistent scalability and system performance}
   \resumeItemListEnd
 
-  % Carnegie Mellon University
   \resumeSubheading
     {Carnegie Mellon University}{Jun 2024 - Aug 2024}
-    {\href{https://riss.ri.cmu.edu/}{Robotics Institute Summer Scholar}}{Pittsburgh, PA}
+    {{{Robotics Institute Summer Scholar}}}{Pittsburgh, PA} 
   \resumeItemListStart
     \resumeItem{Developed a novel hierarchical \textbf{reward learning framework} using \textbf{Bayesian inference} to align robotic actions with human preferences from iterative \textbf{state corrections}, significantly enhancing robot adaptability}
-    \resumeItem{Implemented a \textbf{proactive clarification dialogue} system enabling robots to resolve uncertainty through targeted human queries, improving task accuracy and reducing errors in simulated human-robot collaboration scenarios}
-    \resumeItem{Engineered a modular and extensible \textbf{Python}-based simulation environment utilizing \textbf{Markov Decision Processes (MDP)}, enabling robust testing and validation of algorithms for interactive robotic learning}
+    \resumeItem{Implemented a \textbf{proactive clarification dialogue} system that improved task accuracy by \textbf{30\%} by resolving uncertainty through targeted human queries, reducing errors and advancing interactive human-robot collaboration}
+    \resumeItem{Engineered a modular, extensible \textbf{Python}-based simulation environment using \textbf{Markov Decision Processes (MDP)}, supporting robust evaluation and iterative development of learning algorithms in simulated robotics tasks}
   \resumeItemListEnd
 
-  % Google
   \resumeSubheading
     {Google}{May 2023 - Aug 2023}
-    {\href{https://buildyourfuture.withgoogle.com/programs/step}{STEP Intern}}{Sunnyvale, CA}
+    {{{Software Engineering Intern (STEP)}}}{Sunnyvale, CA}
   \resumeItemListStart
-    \resumeItem{Developed and deployed \textbf{5 C++ and SQL}-based analytics jobs for internal database queue metrics, significantly reducing operational costs and enabling data-driven decision-making for stakeholders}
-    \resumeItem{Optimized data sampling strategies to scale job execution from \textbf{1\%} to \textbf{100\%} dataset coverage within \textbf{4 hours}, achieving a \textbf{66\%} reduction in runtime and substantially enhancing system performance}
-    \resumeItem{Built interactive, real-time dashboards using \textbf{HTML} and \textbf{SQL}-based queries, empowering clients with immediate insights into queue statuses and facilitating proactive operational management}
-    \resumeItem{Implemented live-update statistical features on client dashboards with \textbf{HTML} and database-driven queries, improving user accessibility and visibility into pending queue activities, driving faster issue resolution}
+    \resumeItem{Developed and deployed \textbf{5 C++ and SQL}-based analytics jobs for internal database queue metrics, significantly reducing operational costs and enabling data-driven decision-making in collaboration with engineering stakeholders}
+    \resumeItem{Optimized data sampling strategies to scale job execution from \textbf{1\%} to \textbf{100\%} dataset coverage within \textbf{4 hours}, achieving a \textbf{66\%} reduction in runtime and improving the scalability, accuracy, and efficiency of internal analytics workflows}
+    \resumeItem{Built interactive, real-time dashboards using \textbf{HTML} and \textbf{SQL}-based queries, delivering actionable insights to internal teams across engineering and operations, and enabling faster decision-making through intuitive visualizations}
+    \resumeItem{Implemented live-update statistical features on client dashboards with \textbf{HTML} and database-driven queries, enhancing stakeholder visibility into queue activity, reducing detection latency, and enabling more responsive system oversight}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -197,43 +208,31 @@
 %-------------------------
 % Projects
 %-------------------------
-\section{Projects}
+\section{Projects} 
 \vspace{-5pt}
 \resumeSubHeadingListStart
 
-  % DDPG Project
   \resumeProjectHeading
-    {\textbf{\href{https://github.com/ethanvillalovoz/ddpg-paper-reimplementation}{DDPG - Paper Reimplementation}}}
-    {Tech Stack: TensorFlow, OpenAI Gym, Python}
+    {\textbf{\href{https://github.com/ethanvillalovoz/sentisync}{\textcolor{blue}{SentiSync}}} \textbf{– Real-Time YouTube Sentiment Analysis}}
+    {Tech Stack: Flask, React, MLflow, DVC, Docker, AWS}
+  \\[3mm]
   \resumeItemListStart
-    \resumeItem{Reimplemented the \textbf{Deep Deterministic Policy Gradient (DDPG)} algorithm using \textbf{TensorFlow 2.x} and \textbf{OpenAI Gym}, featuring modular architecture, hyperparameter tuning, and experiment tracking with \textbf{TensorBoard}}
+    \resumeItem{Built a real-time sentiment analysis system with a Chrome Extension frontend and \textbf{Flask API} backend, enabling instant visualization of YouTube comment sentiment using a fine-tuned \textbf{LightGBM} model and \textbf{TF-IDF} features}
   \resumeItemListEnd
 
   \vspace{-14pt}
 
-  % CodePrep.AI Project
   \resumeProjectHeading
-    {\textbf{\href{https://github.com/ethanvillalovoz/llm-coding-challenge-generator}{CodePrep.AI – AI Coding Interview Prep}}}
+    {\textbf{\href{https://github.com/ethanvillalovoz/llm-coding-challenge-generator}{\textcolor{blue}{CodePrep.AI}}} \textbf{– AI Coding Interview Prep}}
     {Tech Stack: React, FastAPI, Clerk, Hugging Face, SQLite}
   \\[3mm]
   \resumeItemListStart
     \resumeItem{Designed and deployed a full-stack platform for interactive coding interview prep that generates unique, difficulty-based challenges via \textbf{Meta-Llama-3-8B-Instruct}, with real-time feedback, quota tracking, and historical review}
-    \resumeItem{Engineered a secure, responsive frontend in \textbf{React} with \textbf{Clerk} authentication and built a modular \textbf{FastAPI} backend with \textbf{SQLAlchemy}, \textbf{Pydantic}, and \textbf{Ngrok}-verified webhooks for seamless user management and LLM integration}
-  \resumeItemListEnd
-
-  \vspace{-14pt}
-
-  % FaceTrack Project
-  \resumeProjectHeading
-    {\textbf{\href{https://github.com/ethanvillalovoz/FaceTrack-Face-Attendance-System}{FaceTrack - Face Attendance System}}}
-    {Tech Stack: React, FastAPI, SQLite, OpenCV, face\_recognition}
-  \\[3mm]
-  \resumeItemListStart
-    \resumeItem{Built an end-to-end face recognition system to automate attendance tracking using \textbf{OpenCV} and \textbf{face\_recognition}, supporting both real-time webcam input and batch image uploads with robust face embedding and matching logic}
-    \resumeItem{Developed a full-stack web application with a responsive \textbf{React} frontend and scalable \textbf{FastAPI} backend, integrating image upload APIs, batch processing pipelines, and persistent \textbf{SQLite} storage for live attendance retrieval}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+
+\vspace{-4pt}
 
 %-------------------------
 % End Document
