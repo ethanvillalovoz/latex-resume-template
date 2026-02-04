@@ -95,13 +95,13 @@ INPUT /opt/texlive/texdir/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel/txtbabel.def
-INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/en/babel-en.ini
+INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /opt/texlive/texdir/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/tools/array.sty

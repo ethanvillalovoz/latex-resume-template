@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.2)  13 DEC 2025 02:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.1)  4 FEB 2026 11:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **resume.tex
 (./resume.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/size11.clo
@@ -131,7 +131,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 \c@section@level=\count285
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count286
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/stringenc.sty
@@ -232,23 +232,23 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \@temptokenb=\toks23
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/12/30 v25.18 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count297
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2045.
+ne 2068.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2047.
+ne 2070.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2049.
+e 2072.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2050.
+e 2073.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2051.
+on input line 2074.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2053.
+on input line 2076.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2078.
+on input line 2101.
 \U@D=\dimen159
 \l@unhyphenated=\language90
 
@@ -256,24 +256,24 @@ on input line 2078.
 \bbl@readstream=\read3
 \bbl@dirlevel=\count298
 
+(/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4321.
+
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-
-(/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 12.
-)
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 108.
-)) (/opt/texlive/texdir/texmf-dist/tex/latex/tools/tabularx.sty
+))
+(/opt/texlive/texdir/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen160
 \ar@mcellbox=\box55
 \extrarowheight=\dimen161
@@ -292,19 +292,19 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-09-02 L3 programming layer (loader) 
+Package: expl3 2025-12-29 L3 programming layer (loader) 
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
 ))
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-hel
 per.sty
@@ -313,7 +313,7 @@ tawesome5
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def
 ))) (/opt/texlive/texdir/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@tracingmulticols=\count301
 \mult@box=\box57
 \multicol@leftmargin=\dimen167
@@ -510,8 +510,6 @@ Overfull \hbox (0.56024pt too wide) in paragraph at lines 227--228
  []
 
 
-
-
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 4.08003pt, for example:
 (fancyhdr)                \setlength{\footskip}{4.08003pt}.
@@ -521,8 +519,8 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./resume.aux)
  ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
  ***********
 
 
@@ -532,13 +530,13 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: F0F364FF2A6D68A2B8D4F9BABC92E10D;418.
  ) 
 Here is how much of TeX's memory you used:
- 14613 strings out of 467748
- 249840 string characters out of 5429049
- 692489 words of memory out of 5000000
- 43160 multiletter control sequences out of 15000+600000
+ 14625 strings out of 467538
+ 250093 string characters out of 5421637
+ 695849 words of memory out of 5000000
+ 43382 multiletter control sequences out of 15000+600000
  634539 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,328b,462s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,345b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
 pt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/te
 xlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></opt/texliv
