@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.1)  4 FEB 2026 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.1)  7 FEB 2026 00:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -290,224 +290,68 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \TX@cols=\count299
 \TX@ftn=\toks25
 )
-(/opt/texlive/texdir/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
-(/opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-12-29 L3 programming layer (loader) 
-
+(/opt/texlive/texdir/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
-))
-Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
-(/opt/texlive/texdir/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2025-10-09 L3 Experimental document command parser
-)
-(/opt/texlive/texdir/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-hel
-per.sty
-Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
-tawesome5
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def
-))) (/opt/texlive/texdir/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
-\c@tracingmulticols=\count301
-\mult@box=\box57
-\multicol@leftmargin=\dimen167
-\c@unbalance=\count302
-\c@collectmore=\count303
-\doublecol@number=\count304
-\multicoltolerance=\count305
-\multicolpretolerance=\count306
-\full@width=\dimen168
-\page@free=\dimen169
-\premulticols=\dimen170
-\postmulticols=\dimen171
-\multicolsep=\skip72
-\multicolbaselineskip=\skip73
-\partial@page=\box58
-\last@line=\box59
-\mc@boxedresult=\box60
-\maxbalancingoverflow=\dimen172
-\mult@rightbox=\box61
-\mult@grightbox=\box62
-\mult@firstbox=\box63
-\mult@gfirstbox=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
-\@tempa=\box84
-\@tempa=\box85
-\@tempa=\box86
-\@tempa=\box87
-\@tempa=\box88
-\@tempa=\box89
-\@tempa=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\c@minrows=\count307
-\c@columnbadness=\count308
-\c@finalcolumnbadness=\count309
-\last@try=\dimen173
-\multicolovershoot=\dimen174
-\multicolundershoot=\dimen175
-\mult@nat@firstbox=\box101
-\colbreak@box=\box102
-\mc@col@check@num=\count310
-\g__mc_curr_col_int=\count311
-)
-(/opt/texlive/texdir/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
-(/opt/texlive/texdir/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/opt/texlive/texdir/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count312
-\Gm@cntv=\count313
-\c@Gm@tempcnt=\count314
-\Gm@bindingoffset=\dimen176
-\Gm@wd@mp=\dimen177
-\Gm@odd@mp=\dimen178
-\Gm@even@mp=\dimen179
-\Gm@layoutwidth=\dimen180
-\Gm@layoutheight=\dimen181
-\Gm@layouthoffset=\dimen182
-\Gm@layoutvoffset=\dimen183
-\Gm@dimlist=\toks26
-) (./resume.aux)
+(./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
 
 (/opt/texlive/texdir/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
-\scratchdimen=\dimen184
-\scratchbox=\box103
-\nofMPsegments=\count316
-\nofMParguments=\count317
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count318
-\MPscratchDim=\dimen185
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count301
+\scratchdimen=\dimen167
+\scratchbox=\box57
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen168
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks27
 )
-Package hyperref Info: Link coloring OFF on input line 105.
+Package hyperref Info: Link coloring OFF on input line 106.
  (./resume.out) (./resume.out)
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(39.83368pt, 534.62764pt, 39.83368pt)
-* v-part:(T,H,B)=(39.83368pt, 715.30263pt, 39.83368pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=556.30885pt
-* \textheight=715.30263pt
-* \oddsidemargin=-43.27637pt
-* \evensidemargin=-32.43631pt
-* \topmargin=-32.43631pt
-* \headheight=0.0pt
-* \headsep=0.0pt
-* \topskip=11.0pt
-* \footskip=0.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
-* \columnsep=-1.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 113.
+(Font)              <7> on input line 112.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 113.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 113.
+(Font)              <5> on input line 112.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 11
-3.
+2.
+
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 125.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 131.
+(Font)              <10.95> on input line 129.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 131.
+(Font)              <8> on input line 129.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 147.
-
-Overfull \hbox (0.56024pt too wide) in paragraph at lines 217--218
-[]  
- []
-
-
-Overfull \hbox (0.56024pt too wide) in paragraph at lines 227--228
-[]  
- []
+(Font)              <6> on input line 129.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -522,32 +366,26 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: F0F364FF2A6D68A2B8D4F9BABC92E10D;418.
+(rerunfilecheck)             Checksum: 4D3A3466DF4AEC76556325AAFE36C0F3;390.
  ) 
 Here is how much of TeX's memory you used:
- 14625 strings out of 467538
- 250093 string characters out of 5421637
- 695849 words of memory out of 5000000
- 43382 multiletter control sequences out of 15000+600000
- 634539 words of font info for 67 fonts, out of 8000000 for 9000
+ 10864 strings out of 467538
+ 170591 string characters out of 5421637
+ 629269 words of memory out of 5000000
+ 39655 multiletter control sequences out of 15000+600000
+ 632913 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,345b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,349b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
-pt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/te
-xlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></opt/texliv
-e/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/texd
-ir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/texlive/texdir/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/texlive/texdir/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on resume.pdf (1 page, 106572 bytes).
+pt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></opt/t
+exlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive
+/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/texd
+ir/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on resume.pdf (1 page, 81095 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  6 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

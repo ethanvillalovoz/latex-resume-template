@@ -1,12 +1,12 @@
-%==================================================
-% Ethan Villalovoz - Resume
-%==================================================
+%-------------------------
+% Resume in Latex
+% Author : Ethan Villalovoz
+% Based off of: https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
-%-------------------------
-% Packages
-%-------------------------
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -18,223 +18,212 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-\usepackage[margin=1.4cm]{geometry}
 
-%-------------------------
-% Page Style
-%-------------------------
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-%-------------------------
-% Margins and Spacing
-%-------------------------
-\addtolength{\oddsidemargin}{-0.15in}
-\addtolength{\textwidth}{0.3in}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
 \urlstyle{same}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-%-------------------------
-% Section Formatting
-%-------------------------
+% Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-%-------------------------
-% PDF Accessibility
-%-------------------------
+% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
-% Custom Commands
-%-------------------------
+% Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{{#1 \vspace{0pt}}}
-}
-
-\newcommand{\classesList}[4]{
-  \item\small{{#1 #2 #3 #4 \vspace{-2pt}}}
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & \textbf{\small #2} \\
-    \textrm{\small#3} & \textrm{\small #4} \\
-  \end{tabular*}\vspace{-7pt}
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-  \item
-  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textit{\small#1} & \textit{\small #2} \\
-  \end{tabular*}\vspace{-7pt}
+    \item
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+      {\small#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-  \item
-  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-    \small#1 & \textrm{\small #2}\\
-  \end{tabular*}\vspace{-7pt}
+    \item
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.4em]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%==================================================
-% DOCUMENT START
-%==================================================
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 
-%-------------------------
-% Heading
-%-------------------------
+%----------HEADING----------
 \begin{center}
-  {\Large \scshape Ethan Villalovoz} \\[2mm]
-  \footnotesize
-  \href{tel:+11234567890}{\textcolor{blue}{+1 (123) 456-7890}} $|$
-  \href{mailto:ethan.villalovoz@gmail.com}{\textcolor{blue}{ethan.villalovoz@gmail.com}} $|$
-  \href{https://www.linkedin.com/in/evillalovoz27/}{\textcolor{blue}{linkedin.com/in/evillalovoz27}} \\
-  \href{https://github.com/ethanvillalovoz}{\textcolor{blue}{github.com/ethanvillalovoz}} $|$
-  \href{https://ethanvillalovoz.com}{\textcolor{blue}{ethanvillalovoz.com}} $|$
-  US~Citizen
-  \vspace{-8pt}
+    {\Large \scshape Ethan Villalovoz} \\ \vspace{1pt}
+    {\small 
+        \href{tel:+15305581523}{\textcolor{blue}{+1 (530) 558-1523}} $|$ 
+        \href{mailto:ethan.villalovoz@gmail.com}{\textcolor{blue}{ethan.villalovoz@gmail.com}} $|$ 
+        \href{https://www.linkedin.com/in/evillalovoz27/}{\textcolor{blue}{linkedin.com/in/evillalovoz27}} \\ \vspace{1pt}
+        \href{https://github.com/ethanvillalovoz}{\textcolor{blue}{github.com/ethanvillalovoz}} $|$
+        \href{https://ethanvillalovoz.com}{\textcolor{blue}{ethanvillalovoz.com}} $|$
+        US~Citizen
+    }
 \end{center}
 
-%-------------------------
-% Education
-%-------------------------
+
+%-----------EDUCATION-----------
 \section{Education}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {Georgia Institute of Technology, College of Computing}{Jan 2026 - Dec 2027}
-    {Master of Science in Computer Science  
-    | Computational Perception and Robotics, GPA: 4.0/4.0
-    }{Atlanta, GA}
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
 
-\vspace{-4pt}
+    % Masters Program
+    \resumeSubheading
+      {Georgia Institute of Technology}{Jan 2026 -- Dec 2027}
+      {Master of Science in Computer Science | GPA: 4.0/4.0}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Robotics, Computer Graphics}
+      \resumeItemListEnd
 
-%---------------------
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {Washington State University, Honors College}{Aug 2021 - May 2025}
-    {Bachelor of Science in Computer Science | Minor in Mathematics, GPA: 3.94/4.0 
-    }{Pullman, WA}
-\resumeSubHeadingListEnd
+    % Undergrad Program
+    \resumeSubheading
+      {Washington State University}{Aug 2021 -- May 2025}
+      {Bachelor of Science in Computer Science | GPA: 3.94/4.0}{Pullman, WA}
+      
+  \resumeSubHeadingListEnd
 
-\resumeItemListStart
-  \resumeItem{Senior Design Project: \href{https://github.com/mollyiverson/ACME10-HE-RAGApp}{\textcolor{blue}{Retrieval-Augmented Generation (RAG)}} App Using Knowledge Graph and Vector Search}
-  \vspace{-7pt}
-  \resumeItem{Relevant Coursework: Artificial Intelligence, Machine Learning, Object-Oriented Programming, Probability \& Statistics, Data Mining, Design \& Analysis Algorithms, Optimization, Software Engineering, Data Structures, Linear Algebra}
-\resumeItemListEnd
 
-\vspace{-8pt}
-
-%-------------------------
-% Technical Skills
-%-------------------------
+%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
-\small{
-  \textbf{Languages}{: Python, C/C++, SQL, JavaScript, TypeScript, HTML/CSS, C\#, MATLAB, R, Haskell, Swift}\\[1mm]
-  \textbf{Developer Tools}{: Git, GitHub, GitHub Actions, Docker, Bash, Conda, AWS, Postman, Jupyter, MLflow, DVC, MySQL}\\[1mm]
-  \textbf{Libraries/Frameworks}{: React, Next.js, FastAPI, 
-  PyTorch, 
-  Pandas, LangChain, Hugging Face Transformers, OpenCV}
-}
-\vspace{-4pt}
+ \begin{itemize}[leftmargin=0pt, label={}]
+ 
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, SQL, JavaScript, TypeScript, HTML/CSS, C\#, MATLAB, R, Haskell, Swift} \\
+     \textbf{Developer Tools}{: Git, GitHub, GitHub Actions, Docker, Bash, Conda, AWS, Postman, Jupyter, MLflow, DVC, MySQL} \\
+     \textbf{Libraries/Frameworks}{: React, Next.js, FastAPI, PyTorch, Pandas, LangChain, Hugging Face Transformers, OpenCV}
+    }}
+    
+ \end{itemize}
 
-%-------------------------
-% Work Experience
-%-------------------------
-\section{Work Experience}
-\resumeSubHeadingListStart
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
 
-  \resumeSubheading
-    {Microsoft}{Summer 2026}
-    {{{Incoming Software Engineer Intern}}}{Redmond, WA} 
+    \resumeSubheading
+      {Microsoft}{May 2026 -- Jul 2026}
+      {Software Engineer Intern}{Pullman, WA}
+      \resumeItemListStart
+        \resumeItem{Commerce and Ecosystems}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Washington State University}{Jan 2024 -- May 2025}
+      {Undergraduate Research Assistant}{Pullman, WA}
+      \resumeItemListStart
+        \resumeItem{Executed large-scale empirical evaluations of a \textbf{Bayesian Optimization–based prompt search} method for LLM-driven code generation, measuring functional correctness across \textbf{164 HumanEval+ tasks} and multiple models}
+        \resumeItem{Built and ran reproducible experiment pipelines for \textbf{test-driven code synthesis}, benchmarking prompt optimization against \textbf{Chain-of-Thought} and \textbf{OPRO} baselines using pass@1 accuracy across HumanEval+ tasks}
+        \resumeItem{Analyzed performance trends across optimization iterations, demonstrating \textbf{sample-efficient improvements} in code correctness through continuous embedding-space search with \textbf{Gaussian Process} surrogate models}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
 
-  \resumeSubheading
-    {Meta \& Major League Hacking}{Jun 2025 - Sep 2025}
-    {{{Production Engineering Fellow}}}{Remote} 
-  \resumeItemListStart
-    \resumeItem{Deployed a full-stack \textbf{Flask portfolio app} with \textbf{Docker} on a \textbf{DigitalOcean VPS}, enabling persistent deployment and ensuring \textbf{100\% uptime after reboot} through automated systemd services for stable production reliability}
-    \resumeItem{Integrated a \textbf{MySQL database} and configured \textbf{Nginx reverse proxy with HTTPS and rate limiting}, strengthening backend scalability, improving security, and enhancing reliability for secure production environments}
-    \resumeItem{Automated deployments with a \textbf{CI/CD pipeline} using \textbf{GitHub Actions} and \textbf{Bash}, cutting manual deployment time by \textbf{80\%} and ensuring every push was tested, containerized, and deployed for efficient production workflows}
-    \resumeItem{Implemented a comprehensive \textbf{monitoring stack} with \textbf{Prometheus}, \textbf{Grafana}, and \textbf{Linux CLI tools}, uncovering bottlenecks under load and optimizing resource allocation for consistent scalability and system performance}
-  \resumeItemListEnd
+    \resumeSubheading
+      {Carnegie Mellon University}{Jun 2024 -- Aug 2024}
+      {Robotics Institute Summer Scholar}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem{Developed a novel hierarchical \textbf{reward learning framework} using \textbf{Bayesian inference} to align robotic actions with human preferences from iterative \textbf{state corrections}, significantly enhancing robot adaptability}
+        \resumeItem{Implemented a \textbf{proactive clarification dialogue} system that improved task accuracy by \textbf{30\%} by resolving uncertainty through targeted human queries, reducing errors and advancing interactive human-robot collaboration}
+        \resumeItem{Engineered a modular, extensible \textbf{Python}-based simulation environment using \textbf{Markov Decision Processes (MDP)}, supporting robust evaluation and iterative development of learning algorithms in simulated robotics tasks}
+      \resumeItemListEnd
 
-  \resumeSubheading
-    {Carnegie Mellon University}{Jun 2024 - Aug 2024}
-    {{{Robotics Institute Summer Scholar}}}{Pittsburgh, PA} 
-  \resumeItemListStart
-    \resumeItem{Developed a novel hierarchical \textbf{reward learning framework} using \textbf{Bayesian inference} to align robotic actions with human preferences from iterative \textbf{state corrections}, significantly enhancing robot adaptability}
-    \resumeItem{Implemented a \textbf{proactive clarification dialogue} system that improved task accuracy by \textbf{30\%} by resolving uncertainty through targeted human queries, reducing errors and advancing interactive human-robot collaboration}
-    \resumeItem{Engineered a modular, extensible \textbf{Python}-based simulation environment using \textbf{Markov Decision Processes (MDP)}, supporting robust evaluation and iterative development of learning algorithms in simulated robotics tasks}
-  \resumeItemListEnd
+    \resumeSubheading
+      {Google}{May 2023 -- Aug 2023}
+      {Software Engineering Intern (STEP)}{Sunnyvale, CA}
+      \resumeItemListStart
+        \resumeItem{Developed and deployed \textbf{5 C++ and SQL}-based analytics jobs for internal database queue metrics, significantly reducing operational costs and enabling data-driven decision-making in collaboration with engineering stakeholders}
+        \resumeItem{Optimized data sampling strategies to scale job execution from \textbf{1\%} to \textbf{100\%} dataset coverage within \textbf{4 hours}, achieving a \textbf{66\%} reduction in runtime and improving the scalability, accuracy, and efficiency of internal analytics workflows}
+        \resumeItem{Built interactive, real-time dashboards using \textbf{HTML} and \textbf{SQL}-based queries, delivering actionable insights to internal teams across engineering and operations, and enabling faster decision-making through intuitive visualizations}
+        \resumeItem{Implemented live-update statistical features on client dashboards with \textbf{HTML} and database-driven queries, enhancing stakeholder visibility into queue activity, reducing detection latency, and enabling more responsive system oversight}
+      \resumeItemListEnd
 
-  \resumeSubheading
-    {Google}{May 2023 - Aug 2023}
-    {{{Software Engineering Intern (STEP)}}}{Sunnyvale, CA}
-  \resumeItemListStart
-    \resumeItem{Developed and deployed \textbf{5 C++ and SQL}-based analytics jobs for internal database queue metrics, significantly reducing operational costs and enabling data-driven decision-making in collaboration with engineering stakeholders}
-    \resumeItem{Optimized data sampling strategies to scale job execution from \textbf{1\%} to \textbf{100\%} dataset coverage within \textbf{4 hours}, achieving a \textbf{66\%} reduction in runtime and improving the scalability, accuracy, and efficiency of internal analytics workflows}
-    \resumeItem{Built interactive, real-time dashboards using \textbf{HTML} and \textbf{SQL}-based queries, delivering actionable insights to internal teams across engineering and operations, and enabling faster decision-making through intuitive visualizations}
-    \resumeItem{Implemented live-update statistical features on client dashboards with \textbf{HTML} and database-driven queries, enhancing stakeholder visibility into queue activity, reducing detection latency, and enabling more responsive system oversight}
-  \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\resumeSubHeadingListEnd
 
-\vspace{-12pt}
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/ethanvillalovoz/sentisync}{\textcolor{blue}{SentiSync}}} 
+          \textbf{-- Real-Time YouTube Sentiment Analysis} $|$ {Flask, React, MLflow, DVC, Docker, AWS}}{}
+          \resumeItemListStart
+            \resumeItem{Built a real-time sentiment analysis system with a Chrome Extension frontend and \textbf{Flask API} backend, enabling instant visualization of YouTube comment sentiment using a fine-tuned \textbf{LightGBM} model and \textbf{TF-IDF} features}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/ethanvillalovoz/llm-coding-challenge-generator}{\textcolor{blue}{CodePrep.AI}}} 
+          \textbf{-- AI Coding Interview Prep} $|$ {React, FastAPI, Clerk, Hugging Face, SQLite}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and deployed a full-stack platform for interactive coding interview prep that generates unique, difficulty-based challenges via \textbf{Meta-Llama-3-8B-Instruct}, with real-time feedback, quota tracking, and historical review}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
 
-%-------------------------
-% Projects
-%-------------------------
-\section{Projects} 
-\vspace{-5pt}
-\resumeSubHeadingListStart
 
-  \resumeProjectHeading
-    {\textbf{\href{https://github.com/ethanvillalovoz/sentisync}{\textcolor{blue}{SentiSync}}} \textbf{– Real-Time YouTube Sentiment Analysis}}
-    {Tech Stack: Flask, React, MLflow, DVC, Docker, AWS}
-  \\[3mm]
-  \resumeItemListStart
-    \resumeItem{Built a real-time sentiment analysis system with a Chrome Extension frontend and \textbf{Flask API} backend, enabling instant visualization of YouTube comment sentiment using a fine-tuned \textbf{LightGBM} model and \textbf{TF-IDF} features}
-  \resumeItemListEnd
-
-  \vspace{-14pt}
-
-  \resumeProjectHeading
-    {\textbf{\href{https://github.com/ethanvillalovoz/llm-coding-challenge-generator}{\textcolor{blue}{CodePrep.AI}}} \textbf{– AI Coding Interview Prep}}
-    {Tech Stack: React, FastAPI, Clerk, Hugging Face, SQLite}
-  \\[3mm]
-  \resumeItemListStart
-    \resumeItem{Designed and deployed a full-stack platform for interactive coding interview prep that generates unique, difficulty-based challenges via \textbf{Meta-Llama-3-8B-Instruct}, with real-time feedback, quota tracking, and historical review}
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-\vspace{-4pt}
-
-%-------------------------
-% End Document
-%-------------------------
+%-------------------------------------------
 \end{document}
