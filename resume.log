@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.1)  7 FEB 2026 21:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.1)  10 FEB 2026 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -370,19 +370,19 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 4D3A3466DF4AEC76556325AAFE36C0F3;390.
  ) 
 Here is how much of TeX's memory you used:
- 10864 strings out of 467538
- 170591 string characters out of 5421637
- 629269 words of memory out of 5000000
- 39655 multiletter control sequences out of 15000+600000
- 632913 words of font info for 61 fonts, out of 8000000 for 9000
+ 10859 strings out of 467538
+ 170522 string characters out of 5421637
+ 629273 words of memory out of 5000000
+ 39651 multiletter control sequences out of 15000+600000
+ 632010 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,349b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
-pt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></opt/t
-exlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive
-/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/texd
-ir/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on resume.pdf (1 page, 81115 bytes).
+pt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/tex
+live/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/texlive/t
+exdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/texdir
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on resume.pdf (1 page, 80690 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
