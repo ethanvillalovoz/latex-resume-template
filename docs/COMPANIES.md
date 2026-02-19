@@ -11,6 +11,7 @@ This is a personal record of companies where I received interview opportunities 
 - Databricks (Ocotober 2025)
 - NVIDIA (December 2025)
 - NVIDIA (January 2026)
+- Boston Dynamics (February 2026)
 
 ### Full-time
 
