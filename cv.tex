@@ -1,0 +1,223 @@
+%-------------------------
+% CV in Latex
+% Author : Ethan Villalovoz
+% Based off of: https://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html
+% License : MIT
+%------------------------
+
+\documentclass[margin,line]{res}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{cvblue}{HTML}{0a5994}
+\definecolor{cvOrange}{HTML}{ff6602}
+
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+%-----------------------------------------------------------------
+
+\name{\makebox[\textwidth]{Ethan Villalovoz \hfill \normalfont\normalsize\it (Last Updated: February 2026)}}
+
+%-----------------------------------------------------------------
+
+\begin{resume}
+\section{\sc Contact}
+\vspace{.05in}
+% \begin{tabularx}{\textwidth}{@{}X l@{}}
+% Baker Hall 232 & {\it Voice:} (412) 268-6276 \\
+% Department of Statistics & {\it Fax:} (412) 268-7828 \\
+% Carnegie Mellon University & {\it E-mail:} paciorek@stat.cmu.edu \\
+% Pittsburgh, PA 15213 USA & {\it WWW:} www.stat.cmu.edu/\verb+~+paciorek \\
+% \end{tabularx}
+\begin{tabularx}{\textwidth}{@{}X l@{}}
+Georgia Institute of Technology & {\it E-mail:} \href{mailto:ethan.villalovoz@gatech.edu}{\textcolor{cvblue}{ethan.villalovoz@gatech.edu}} \\
+Sacramento, California, United States & {\it Links:} \href{https://ethanvillalovoz.com}{\textcolor{cvblue}{Website}}, \href{https://www.linkedin.com/in/evillalovoz27/}{\textcolor{cvblue}{LinkedIn}}, \href{https://scholar.google.com/citations?user=CavKFp4AAAAJ\&hl=en}{\textcolor{cvblue}{Google Scholar}} \\
+\end{tabularx}
+
+%-----------------------------------------------------------------
+
+% \section{\sc Research Interests}
+% Aligned world models for robotics, human intent inference, interactive robot learning, human–AI collaboration, generative
+% models for embodied intelligence, developing autonomous systems that resolve ambiguity, learn from minimal human
+% feedback, and plan safely and intelligently in complex environments.
+
+%-----------------------------------------------------------------
+
+\section{\sc Education}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Georgia Institute of Technology} & \textbf{Jan 2026 -- Dec 2027} \\
+\emph{M.S. in Computer Science}, Computational Perception and Robotics & GPA: 4.0/4.0 \\
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Washington State University} & \textbf{Aug 2021 -- May 2025} \\
+\emph{B.S. in Computer Science}, Minor in Mathematics & GPA: 3.94/4.0 \\
+\end{tabularx}
+Senior Design Project: \href{https://ethanvillalovoz.com/data/capstone/index.html}{\textcolor{cvblue}{Retrieval-Augmented Generation Using Knowledge Graph and Vector Search}}
+
+%-----------------------------------------------------------------
+
+\section{\sc Experience}
+
+% ---------- Georgia Institute of Technology ----------
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Georgia Institute of Technology}, Atlanta, Georgia, United States & \textbf{Feb 2026 -- Present} \\
+\end{tabularx}
+\emph{Graduate Student Researcher}, Advised by \href{https://animesh.garg.tech/}{\textcolor{cvblue}{Animesh Garg}} \\
+Robotics.
+
+% ---------- Microsoft ----------
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Microsoft}, Redmond, Washington, United States & \textbf{May 2026 -- Jul 2026} \\
+\end{tabularx}
+\emph{Software Engineer Intern}, Advised by \href{https://foo.com}{\textcolor{cvblue}{TBA}} \\
+Commerce and Ecosystems.
+
+% ---------- Washington State University ----------
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Washington State University}, Pullman, Washington, United States & \textbf{Jan 2024 -- May 2025} \\
+\end{tabularx}
+\emph{Undergraduate Research Assistant}, Advised by \href{https://eecs.wsu.edu/~jana/}{\textcolor{cvblue}{Janardhan Rao (Jana) Doppa}} \\
+Designed and evaluated a Bayesian optimization framework for prompt-based LLM code generation, improving sample-efficient functional correctness.
+
+% ---------- Carnegie Mellon University ----------
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Carnegie Mellon University}, Pittsburgh, Pennsylvania, United States & \textbf{Jun 2024 -- Aug 2024} \\
+\end{tabularx}
+\emph{Robotics Institute Summer Scholar}, Advised by \href{https://hennyadmoni.com/}{\textcolor{cvblue}{Henny Admoni}} \\
+Designed and implemented a hierarchical reward learning framework with Bayesian inference and clarification dialogues, enabling adaptive robot behavior in human-robot interaction.
+
+% ---------- Google ----------
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Google}, Sunnyvale, California, United States & \textbf{May 2023 -- Aug 2023} \\
+\end{tabularx}
+\emph{Software Engineering Intern (STEP)}, Advised by \href{https://www.linkedin.com/in/aruntejch/}{\textcolor{cvblue}{Arun Tej Chennadi}}, \href{https://www.linkedin.com/in/paul-valdez/}{\textcolor{cvblue}{Paul Valdez}} \\
+Designed and implemented scalable C++ and SQL analytics pipelines with interactive dashboards, enabling efficient internal data workflows.
+
+% ---------- Oregon State University ----------
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Oregon State University}, Corvallis, Oregon, United States & \textbf{Jun 2022 -- Aug 2022} \\
+\end{tabularx}
+\emph{NSF REU Fellow}, Advised by \href{https://www.charismarobotics.com/}{\textcolor{cvblue}{Heather Knight}} \\
+Designed and implemented geometric motion primitives and interactive deployment tools enabling expressive multi-robot behaviors for human-robot interaction research.
+
+%-----------------------------------------------------------------
+
+\section{\sc Awards \&\\ Honors} 
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{\href{https://research.google/programs-and-events/csrmp/}{\textcolor{cvblue}{CS Research Mentorship Program Scholar}}, Google Research} & {2023} \\
+\end{tabularx}
+Accepted to a three-month program that matches students with Google mentors and peers to support their pursuit of computer science research pathways.
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{\href{https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship}{\textcolor{cvblue}{Generation Google Scholarship}}} & {2023} \\
+\end{tabularx}
+Awarded based on the strength of each candidate's commitment to diversity, equity, and inclusion, demonstrated leadership, and academic performance.
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{\href{https://marc.wsu.edu/}{\textcolor{cvblue}{NIH MARC Scholar}} - National Institutes of Health (T34)} & {2023 -- 2025} \\
+\end{tabularx}
+NIH-funded opportunity for undergraduate students from underrepresented backgrounds to embark on a two-year scientific research program, leadership development, and graduate-school preparation.
+
+% \begin{tabularx}{\textwidth}{@{}X r@{}}
+% \textbf{National Institute of Health Fellowship - \href{https://mira.wsu.edu/}{\textcolor{cvblue}{ESTEEMED MIRA}}} & {2021 - 2023} \\
+% \end{tabularx}
+
+%-----------------------------------------------------------------
+
+\section{\sc Pre-Prints}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+[P1] &
+\textbf{An Exploratory Study of Bayesian Prompt Optimization for Test-Driven Code Generation with Large Language Models}. \\
+& S. Tomar, A. Deshwal, \underline{E. Villalovoz}, M. Fazzini, H. Cai, J.R. Doppa. \\
+& \emph{arXiv}, 2025. \\
+\end{tabularx}
+
+%-----------------------------------------------------------------
+
+\section{\sc Conference Publications}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+[C1] &
+\textbf{Social Triangles and Aggressive Lines: Multi-Robot Formations Impact} 
+
+\textbf{Navigation and Approach}. \\
+& A. Bacula, \underline{E. Villalovoz}, D. Flynn, A. Mehta, H. Knight. \\
+& \emph{International Conference on Intelligent Robots and Systems (IROS)}, 2023. \\
+\end{tabularx}
+
+%-----------------------------------------------------------------
+
+\section{\sc Teaching}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{CPT\_S 315: Introduction to Data Mining} & {Spring 2025} \\
+\emph{Undergraduate Teaching Assistant}, Washington State University &  \\
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{CPT\_S 350: Design and Analysis of Algorithms} & {Fall 2024} \\
+\emph{Undergraduate Teaching Assistant}, Washington State University &  \\
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{CPT\_S 355: Programming Language Design} & {Fall 2023} \\
+\emph{Undergraduate Teaching Assistant}, Washington State University &  \\
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{CPT\_S 121: Program Design and Development C/C++} & {Fall 2022} \\
+\emph{Undergraduate Teaching Assistant}, Washington State University &  \\
+\end{tabularx}
+
+%-----------------------------------------------------------------
+
+\section{\sc Outreach} 
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{WSU \href{https://marc.wsu.edu/}{\textcolor{cvblue}{MARC}} \& \href{https://mira.wsu.edu/}{\textcolor{cvblue}{MIRA Program}}} (Invited Talk) & {2025} \\
+% \emph{Alumni Speaker and Mentor} & Summer  \\
+\end{tabularx}
+Invited to present to undergraduate researchers about the graduate school application process. Shared personal experiences and actionable advice for pursuing research opportunities.
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{WSU \href{https://vcea.wsu.edu/student-success/}{\textcolor{cvblue}{VCEA}}} (College Ambassador) & {2022 -- 2024} \\
+% \emph{Voiland } &  \\
+\end{tabularx}
+Represented and connected Voiland College with industry, alumni, and prospective students, sharing unique experiences and perspectives to promote the college’s mission and transformative impact.
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{CMU \href{https://riss.ri.cmu.edu/robolaunch/}{\textcolor{cvblue}{RISS RoboLaunch}}} (Website Coordinator)& {2024} \\
+% \emph{} & Summer  \\
+\end{tabularx}
+An initiative to explore the world of robotics through a series of talks and interactive workshops. Responsible for updating the website to ensure accessibility and provide up-to-date information.
+
+%-----------------------------------------------------------------
+
+\end{resume}
+\end{document}
