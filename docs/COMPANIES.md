@@ -20,6 +20,7 @@ This is a personal record of companies where I received interview opportunities 
 - Waymo (April 2025)
 - Nuro (June 2025)
 - Allen Control Systems (June 2025)
+- Uber (August 2025)
 - Snapchat (August 2025)
 - Applied Intuition (September 2025)
 - Anthropic (September 2025) 
