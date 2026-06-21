@@ -1,7 +1,6 @@
 # 💼 Ethan's LaTeX Resume & Academic CV Template
 
 [![CI](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/ci.yml/badge.svg)](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/ci.yml)
-[![CD](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/cd.yml/badge.svg)](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/cd.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 ![Overleaf Compatible](https://img.shields.io/badge/overleaf-supported-success)
 
@@ -14,8 +13,9 @@ A clean, ATS-friendly LaTeX resume template and a companion academic CV template
 The repository includes:
 - A modern one-page technical resume based on Jake's Resume
 - A two-page academic CV based on a classic `res.cls` layout
+- Blank starter files for both the resume and academic CV
 - Rendered PDF previews for both documents
-- GitHub Actions workflows that compile the resume and CV automatically
+- A GitHub Actions workflow that compiles every TeX entry point automatically
 
 ---
 
@@ -52,7 +52,7 @@ The CV template emphasizes:
 - **Resume packages**: `fullpage`, `titlesec`, `marvosym`, `tabularx`, `hyperref`, `fancyhdr`, `enumitem`, `xcolor`
 - **CV class**: `res.cls` with `tabularx`, `hyperref`, and `xcolor`
 - **PDF output**: ATS-friendly, machine-readable
-- **Platform**: Overleaf for online editing and compilation
+- **Platforms**: Overleaf, local LaTeX workflows, and GitHub Actions
 
 ---
 
@@ -63,6 +63,8 @@ Curious about the design philosophy, technical choices, and why this template wo
 See [docs/ABOUT.md](docs/ABOUT.md) for a deep dive into the reasoning behind the layout, ATS compatibility, and customization features.
 
 See [docs/COMPANIES.md](docs/COMPANIES.md) for a list of companies where this resume has earned me interview opportunities for both internships and full-time roles.
+
+See [docs/FAQ.md](docs/FAQ.md) for common Overleaf, compiler, and customization questions.
 
 ---
 
@@ -80,12 +82,13 @@ See [docs/COMPANIES.md](docs/COMPANIES.md) for a list of companies where this re
    - Upload the entire `src/` folder
 
 3. **Edit and compile:**
-   - Modify your resume in `src/resume.tex`
-   - Modify your academic CV in `src/cv/cv.tex`
+   - Start from `src/starter-resume.tex` for a blank resume
+   - Start from `src/cv/starter-cv.tex` for a blank academic CV
+   - Use `src/resume.tex` and `src/cv/cv.tex` as polished examples
    - Click **Recompile** to generate your PDF
    - Download the final PDF
 
-For the CV, keep `src/cv/res.cls` in the same folder as `cv.tex`.
+For the CV, keep `src/cv/res.cls` in the same folder as `cv.tex` or `starter-cv.tex`.
 
 ---
 
@@ -95,7 +98,8 @@ For the CV, keep `src/cv/res.cls` in the same folder as `cv.tex`.
 - **Section Content**: Use `\resumeItem{}` for bullet points and `\resumeSubheading{}` for roles or education
 - **Bold Technologies**: Use `\textbf{}` to highlight programming languages or tools
 - **Style Adjustments**: Modify the preamble to change fonts, spacing, or colors
-- **Academic CV**: Edit `src/cv/cv.tex`; keep the `res.cls` file alongside it for compilation
+- **Starter Files**: Copy `src/starter-resume.tex` or `src/cv/starter-cv.tex` when building your own document
+- **Academic CV**: Keep `src/cv/res.cls` alongside `cv.tex` or `starter-cv.tex` for compilation
 
 ---
 
@@ -105,22 +109,27 @@ For the CV, keep `src/cv/res.cls` in the same folder as `cv.tex`.
 latex-resume-template/
 ├── .github/                 # GitHub templates and workflows
 │   ├── ISSUE_TEMPLATE/
-│   ├── workflows/           # CI/CD workflows for PDF builds and Pages deploy
+│   ├── workflows/           # CI workflow for PDF builds
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── docs/                    # Documentation, previews, and rendered PDFs
 │   ├── ABOUT.md
 │   ├── COMPANIES.md
+│   ├── FAQ.md
 │   ├── preview.png
 │   ├── resume.pdf
 │   ├── cv-preview.png
 │   └── cv.pdf
 ├── src/                     # LaTeX source files
 │   ├── resume.tex
+│   ├── starter-resume.tex
 │   └── cv/
 │       ├── cv.tex
+│       ├── starter-cv.tex
 │       └── res.cls
 ├── .gitattributes
 ├── .gitignore
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
@@ -133,8 +142,9 @@ latex-resume-template/
 - [x] Overleaf-only version for easier use  
 - [x] Add academic CV source and preview
 - [x] Add Publications section support
-- [ ] Provide alternate color schemes  
-- [ ] Expand documentation (FAQ, troubleshooting)
+- [x] Add blank starter files for public reuse
+- [x] Expand documentation with FAQ and contribution standards
+- [ ] Provide alternate color schemes
 
 ---
 

@@ -1,0 +1,101 @@
+%-------------------------
+% Starter Academic CV in Latex
+% License : MIT
+%------------------------
+
+\documentclass[margin,line]{res}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{cvblue}{HTML}{0a5994}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\begin{document}
+
+\name{\makebox[\textwidth]{First Last \hfill \normalfont\normalsize\it (Last Updated: Month Year)}}
+
+\begin{resume}
+
+\section{\sc Contact}
+\vspace{.05in}
+\begin{tabularx}{\textwidth}{@{}X l@{}}
+University or Organization & {\it E-mail:} \href{mailto:first.last@email.com}{\textcolor{cvblue}{first.last@email.com}} \\
+City, State, Country & {\it Links:} \href{https://yourwebsite.com}{\textcolor{cvblue}{Website}}, \href{https://scholar.google.com/}{\textcolor{cvblue}{Google Scholar}}, \href{https://github.com/username}{\textcolor{cvblue}{GitHub}} \\
+\end{tabularx}
+
+\section{\sc Research Interests}
+One-sentence research identity describing your field, methods, and long-term intellectual direction.
+
+\section{\sc Education}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{University Name} & \textbf{Aug 2024 -- May 2026} \\
+\emph{M.S. in Computer Science}, Specialization or Area & GPA: 4.0/4.0 \\
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{University Name} & \textbf{Aug 2020 -- May 2024} \\
+\emph{B.S. in Computer Science}, Minor or Honors & GPA: 3.9/4.0 \\
+\end{tabularx}
+
+\section{\sc Pre-Prints}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+[P1] &
+\textbf{Paper Title: Concise Subtitle if Needed}. \\
+& A. Author, \underline{F. Last}, B. Collaborator. \\
+& \emph{arXiv:0000.00000}, 2026. \\
+\end{tabularx}
+
+\section{\sc Conference Publications}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+[C1] &
+\textbf{Conference Paper Title}. \\
+& A. Author, \underline{F. Last}, B. Collaborator. \\
+& \emph{Conference Name}, 2026. \\
+\end{tabularx}
+
+\section{\sc Experience}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{University or Lab Name}, City, State, Country & \textbf{Jan 2025 -- Present} \\
+\end{tabularx}
+\emph{Research Assistant}, Advised by Advisor Name \\
+One-sentence description of the research problem, methods, and evidence of contribution.
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Company or Organization}, City, State, Country & \textbf{May 2024 -- Aug 2024} \\
+\end{tabularx}
+\emph{Software Engineer Intern} \\
+One-sentence description of the technical system, your implementation contribution, and impact.
+
+\section{\sc Awards \&\\ Honors}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Award or Fellowship Name} & {2026} \\
+\end{tabularx}
+Short description of selection criteria or significance.
+
+\section{\sc Teaching}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Course Number: Course Name} & {Spring 2026} \\
+\emph{Teaching Assistant}, University Name &  \\
+\end{tabularx}
+
+\section{\sc Outreach}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Program or Event Name} & {2026} \\
+\end{tabularx}
+Short description of mentoring, outreach, service, or invited speaking contribution.
+
+\end{resume}
+\end{document}

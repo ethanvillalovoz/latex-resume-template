@@ -1,0 +1,182 @@
+%-------------------------
+% Starter Resume in Latex
+% Based off of: https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{iftex}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\definecolor{cvblue}{HTML}{0a5994}
+\newcommand{\resumelink}[2]{\href{#1}{\textcolor{cvblue}{#2}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.4em]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape First Last} \\ \vspace{1pt}
+    {\small
+        \resumelink{tel:+10000000000}{+1 (000) 000-0000} $|$
+        \resumelink{mailto:first.last@email.com}{first.last@email.com} $|$
+        \resumelink{https://www.linkedin.com/in/username/}{LinkedIn} $|$
+        \resumelink{https://github.com/username}{GitHub} $|$
+        \resumelink{https://yourwebsite.com}{yourwebsite.com}
+    }
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University Name}{Aug 2024 -- May 2026}
+      {M.S. in Computer Science | GPA: 4.0/4.0}{City, ST}
+
+    \resumeSubheading
+      {University Name}{Aug 2020 -- May 2024}
+      {B.S. in Computer Science | GPA: 3.9/4.0}{City, ST}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Company or Lab Name}{May 2025 -- Aug 2025}
+      {Software Engineer Intern}{City, ST}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{system or feature} using \textbf{technology stack}, improving \textbf{metric or workflow} for \textbf{users or stakeholders}}
+        \resumeItem{Optimized \textbf{technical component} by \textbf{method}, reducing \textbf{runtime/cost/errors} by \textbf{measured result}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Group or Organization}{Jan 2024 -- Present}
+      {Research Assistant}{City, ST}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{model, pipeline, or experiment} for \textbf{research problem}, evaluating results across \textbf{dataset, benchmark, or deployment setting}}
+        \resumeItem{Analyzed \textbf{experimental results} to identify \textbf{finding}, supporting \textbf{paper, prototype, or technical decision}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \begin{itemize}[leftmargin=0pt, label={}, itemsep=2pt]
+
+    \item \small{
+      \resumelink{https://example.com/paper}{\textbf{Paper Title: Concise Subtitle if Needed}}.
+      A. Author, \textbf{F. Last}, B. Collaborator.
+      \emph{Conference or Journal}, 2026.
+    }
+
+  \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{\resumelink{https://github.com/username/project}{Project Name}} $|$ {Python, React, FastAPI, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Built \textbf{product or technical system} that \textbf{does useful thing}, using \textbf{tools} to support \textbf{users, benchmark, or real-world workflow}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\resumelink{https://github.com/username/project}{Project Name}} $|$ {PyTorch, Hugging Face, AWS}}{}
+          \resumeItemListStart
+            \resumeItem{Designed \textbf{model, pipeline, or application} and evaluated it with \textbf{metric}, achieving \textbf{result or learning outcome}}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0pt, label={}]
+
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, SQL, TypeScript, JavaScript, HTML/CSS} \\
+     \textbf{AI/ML}{: PyTorch, TensorFlow, scikit-learn, Hugging Face, OpenCV} \\
+     \textbf{Web/Backend}{: React, Next.js, FastAPI, Flask, REST APIs, PostgreSQL} \\
+     \textbf{Developer Tools}{: Git, GitHub Actions, Docker, AWS, Bash, Linux}
+    }}
+
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

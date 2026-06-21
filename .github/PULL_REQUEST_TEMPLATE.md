@@ -4,24 +4,24 @@ Thank you for your contribution! Please fill out the following checklist and pro
 
 ## Description
 
-<!-- Please include a summary of the change and which issue is fixed. Also include relevant motivation and context. -->
+<!-- Summarize the template, documentation, workflow, or preview change. Include motivation and context. -->
 
 Fixes #(issue)
 
 ## Type of change
-- [ ] Bug fix
-- [ ] New feature
+- [ ] LaTeX template fix
 - [ ] Documentation update
+- [ ] Workflow/CI update
+- [ ] Preview/PDF update
 - [ ] Other (please describe):
 
 ## Checklist
-- [ ] My code follows the project style guidelines
+- [ ] My changes follow the existing LaTeX and Markdown style
 - [ ] I have performed a self-review of my code
-- [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation (if relevant)
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works (if applicable)
-- [ ] New and existing tests pass locally with my changes
+- [ ] I compiled any changed `.tex` files locally or verified the CI result
+- [ ] My changes do not introduce avoidable LaTeX warnings
+- [ ] Updated preview PDFs/images are included when the visual output changed
 
 ## Additional context
 

@@ -19,6 +19,7 @@ Thank you for your interest in contributing! Your help is appreciated to make th
 - Use clear, descriptive commit messages.
 - For significant changes, please open an issue first to discuss what you’d like to change.
 - Keep PRs focused and minimal—one feature or fix per PR is best.
+- Follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
@@ -28,12 +29,14 @@ To verify your changes build correctly:
 ```bash
 cd src
 latexmk -xelatex -interaction=nonstopmode resume.tex
+latexmk -xelatex -interaction=nonstopmode starter-resume.tex
 
 cd cv
 latexmk -xelatex -interaction=nonstopmode cv.tex
+latexmk -xelatex -interaction=nonstopmode starter-cv.tex
 ```
 
-Ensure `resume.pdf` and `cv.pdf` are generated and no errors appear in the logs.
+Ensure all four PDFs are generated and no errors appear in the logs.
 
 ---
 
@@ -53,6 +56,7 @@ Be respectful and constructive. Disrespectful or inappropriate behavior will not
 ## Resources
 
 - [README.md](README.md) — Project overview and usage
+- [docs/FAQ.md](docs/FAQ.md) — Common usage and compilation questions
 - [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) — Issue templates
 - [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md) — PR template
 

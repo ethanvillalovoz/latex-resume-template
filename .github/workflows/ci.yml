@@ -20,10 +20,24 @@ jobs:
           working_directory: src
           latexmk_use_xelatex: true
 
+      - name: Compile starter-resume.tex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: starter-resume.tex
+          working_directory: src
+          latexmk_use_xelatex: true
+
       - name: Compile cv.tex
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv.tex
+          working_directory: src/cv
+          latexmk_use_xelatex: true
+
+      - name: Compile starter-cv.tex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: starter-cv.tex
           working_directory: src/cv
           latexmk_use_xelatex: true
 
@@ -33,4 +47,6 @@ jobs:
           name: latex-documents
           path: |
             src/resume.pdf
+            src/starter-resume.pdf
             src/cv/cv.pdf
+            src/cv/starter-cv.pdf
