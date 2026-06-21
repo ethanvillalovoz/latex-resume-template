@@ -4,3 +4,7 @@
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+*.xdv
+.DS_Store
+src/*.pdf
+src/**/*.pdf

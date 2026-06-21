@@ -1,4 +1,4 @@
-# 💼 Ethan's LaTeX Resume Template
+# 💼 Ethan's LaTeX Resume & Academic CV Template
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
@@ -9,32 +9,47 @@
 
 ## 🚀 Introduction
 
-A clean, ATS-friendly, and professional LaTeX resume template designed for clarity, impact, and easy customization.  
+A clean, ATS-friendly LaTeX resume template and a companion academic CV template designed for clarity, credibility, and easy customization.
 
-Perfect for students, early-career professionals, and anyone who wants a modern, one-page resume — all editable directly on **Overleaf**.
+The repository includes:
+- A modern one-page technical resume based on Jake's Resume
+- A two-page academic CV based on a classic `res.cls` CV layout
+- Source files that compile cleanly on Overleaf or with a local LaTeX installation
 
 ---
 
 ## 📋 Description
 
-This template emphasizes:
-- **Minimalist, one-page layout** for maximum readability
-- **Bold tech stacks** and modular bullet points for easy scanning
+The resume template emphasizes:
+- **Minimalist one-page layout** for technical recruiting
 - **Machine-readable PDF output** for ATS compatibility
-- **Fully editable on Overleaf** — no local setup required
+- **Compact sections** for education, experience, publications, projects, and skills
+- **Visible but conservative link styling** using `#0a5994`
+
+The CV template emphasizes:
+- **Academic ordering** with research interests, education, publications, experience, awards, teaching, and outreach
+- **Advisor and publication context** for research-oriented applications
+- **Readable two-page structure** without forcing resume-style compression
 
 ---
 
 ## 🖼️ Visuals
 
+### Resume
+
 ![Resume Preview](docs/preview.png)
+
+### Academic CV
+
+![Academic CV Preview](docs/cv-preview.png)
 
 ---
 
 ## 🛠️ Technologies Used
 
 - **LaTeX** (core typesetting)
-- **Packages**: `fullpage`, `titlesec`, `marvosym`, `fontawesome5`, `tabularx`, `multicol`, `hyperref`, `fancyhdr`, `enumitem`, `geometry`
+- **Resume packages**: `fullpage`, `titlesec`, `marvosym`, `tabularx`, `hyperref`, `fancyhdr`, `enumitem`, `xcolor`
+- **CV class**: `res.cls` with `tabularx`, `hyperref`, and `xcolor`
 - **PDF output**: ATS-friendly, machine-readable
 - **Platform**: Overleaf for online editing and compilation
 
@@ -61,12 +76,15 @@ See [docs/COMPANIES.md](docs/COMPANIES.md) for a list of companies where this re
 2. **Upload to Overleaf:**
    - Go to [Overleaf](https://overleaf.com/)
    - Create a **New Project → Upload Project**
-   - Upload the entire `src/` folder (or just `src/resume.tex` if you prefer)
+   - Upload the entire `src/` folder
 
 3. **Edit and compile:**
-   - Modify your details directly in `resume.tex`
+   - Modify your resume in `src/resume.tex`
+   - Modify your academic CV in `src/cv/cv.tex`
    - Click **Recompile** to generate your PDF
-   - Download the final `resume.pdf`
+   - Download the final PDF
+
+For the CV, keep `src/cv/res.cls` in the same folder as `cv.tex`.
 
 ---
 
@@ -76,6 +94,7 @@ See [docs/COMPANIES.md](docs/COMPANIES.md) for a list of companies where this re
 - **Section Content**: Use `\resumeItem{}` for bullet points and `\resumeSubheading{}` for roles or education
 - **Bold Technologies**: Use `\textbf{}` to highlight programming languages or tools
 - **Style Adjustments**: Modify the preamble to change fonts, spacing, or colors
+- **Academic CV**: Edit `src/cv/cv.tex`; keep the `res.cls` file alongside it for compilation
 
 ---
 
@@ -90,9 +109,15 @@ latex-resume-template/
 ├── docs/                    # Documentation and preview
 │   ├── ABOUT.md
 │   ├── preview.png
-│   └── resume.pdf           # Compiled sample (not versioned)
+│   ├── resume.pdf
+│   ├── cv-preview.png
+│   └── cv.pdf
 ├── src/                     # LaTeX source files
-│   └── resume.tex
+│   ├── resume.tex
+│   ├── cv/
+│   │   ├── cv.tex
+│   │   └── res.cls
+│   └── prev_resume/
 ├── .gitignore
 ├── CONTRIBUTING.md
 ├── LICENSE
@@ -104,7 +129,8 @@ latex-resume-template/
 ## 🛣️ Roadmap
 
 - [x] Overleaf-only version for easier use  
-- [ ] Add more resume section templates (e.g., Publications, Awards)  
+- [x] Add academic CV source and preview
+- [x] Add Publications section support
 - [ ] Provide alternate color schemes  
 - [ ] Expand documentation (FAQ, troubleshooting)
 

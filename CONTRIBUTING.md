@@ -26,9 +26,14 @@ Thank you for your interest in contributing! Your help is appreciated to make th
 
 To verify your changes build correctly:
 ```bash
-pdflatex resume.tex
-# Ensure resume.pdf is generated and no errors appear in the log
+cd src
+latexmk -xelatex resume.tex
+
+cd cv
+latexmk -xelatex cv.tex
 ```
+
+Ensure `resume.pdf` and `cv.pdf` are generated and no errors appear in the logs.
 
 ---
 

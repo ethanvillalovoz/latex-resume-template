@@ -18,9 +18,19 @@ jobs:
         with:
           root_file: resume.tex
           working_directory: src
+          latexmk_use_xelatex: true
 
-      - name: Upload PDF artifact
+      - name: Compile cv.tex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: src/cv
+          latexmk_use_xelatex: true
+
+      - name: Upload PDF artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: resume-pdf
-          path: src/resume.pdf
+          name: latex-documents
+          path: |
+            src/resume.pdf
+            src/cv/cv.pdf

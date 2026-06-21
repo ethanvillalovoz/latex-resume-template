@@ -1,19 +1,29 @@
-# 🧠 Behind the Resume: Why This Template Works
+# 🧠 Behind the Resume and CV: Why These Templates Work
 
-This LaTeX resume template was created and refined by Ethan Villalovoz to be **clean, professional, ATS-friendly**, and **impactful for technical roles** in software engineering, AI/ML, robotics, and research. Here's a breakdown of the design philosophy and technical choices that make this resume effective:
+This LaTeX template repository was created and refined by Ethan Villalovoz to support two public-facing career documents:
+
+- a concise, ATS-friendly technical resume for software engineering, AI/ML, robotics, and research engineering roles
+- an academic CV for research-oriented contexts where publications, advisors, teaching, and outreach matter
+
+Both documents are intentionally conservative: readable typography, semantic text, visible links, and no visual tricks that make the PDF harder to parse.
 
 ---
 
 ## 🎯 Purpose & Audience
 
-This template is designed for:
+The resume template is designed for:
 - Students and early-career professionals applying to **internships**, **fellowships**, **research roles**, and **new grad tech positions**
 - Developers and researchers looking to showcase **projects**, **technical skills**, and **experience** concisely
 - Anyone who wants a **LaTeX-powered**, fully customizable resume with clean formatting
 
+The academic CV template is designed for:
+- Research-oriented students and early-career researchers
+- Academic websites, graduate applications, lab applications, and research programs
+- Situations where publications, teaching, advisors, and outreach should not be compressed into a one-page resume
+
 ---
 
-## ✅ Why It’s a Great Resume Template
+## ✅ Why the Resume Template Works
 
 ### 📌 1. **ATS-Compatible & PDF-Readable**
 - Uses `\pdfgentounicode=1` to ensure machine-readable output
@@ -25,8 +35,8 @@ This template is designed for:
 - Bolded **technologies** and **key phrases** improve skimmability
 - Focused on high-impact bullet points with quantifiable results
 
-### ✍️ 3. **Bullet Points Follow the XYZ Resume Formula**
-All bullet points follow the **XYZ formula**:
+### ✍️ 3. **Bullets Emphasize Evidence**
+Strong bullets usually follow the **XYZ formula** when it fits naturally:
 > **"Accomplished X, by doing Y, as measured by Z"**
 
 This ensures:
@@ -50,6 +60,18 @@ Example:
 
 ---
 
+## 🎓 Why the Academic CV Template Works
+
+The CV is not a stretched resume. It is a scholarly record, so it uses a different structure:
+
+- **Research Interests** appear near the top to establish academic direction.
+- **Publications** are placed before experience because peer-reviewed and preprint work carry research signal.
+- **Experience** entries are concise and include advisors when relevant.
+- **Teaching, awards, and outreach** are preserved as academic evidence rather than trimmed for one-page density.
+- The template accepts healthy page-two whitespace instead of padding weak content.
+
+---
+
 ## 🔍 Design Highlights
 
 | Feature                     | Description |
@@ -64,8 +86,9 @@ Example:
 
 ## 🧰 Tools & Packages Used
 
-- `titlesec`, `geometry`, `fontawesome5`, `multicol`, `tabularx`, `hyperref`, and more
-- Preamble fine-tuned for readability, layout control, and ATS compliance
+- Resume: `fullpage`, `titlesec`, `marvosym`, `tabularx`, `hyperref`, `fancyhdr`, `enumitem`, `xcolor`, and `glyphtounicode`
+- CV: `res.cls`, `tabularx`, `hyperref`, and `xcolor`
+- Preambles are tuned for readability, layout control, and PDF text extraction
 
 ---
 
@@ -73,8 +96,9 @@ Example:
 
 Feel free to:
 - Fork the repo
-- Replace content in `resume.tex`
-- Tweak formatting using the well-documented LaTeX macros
+- Replace content in `src/resume.tex`
+- Replace content in `src/cv/cv.tex`
+- Tweak formatting using the LaTeX macros and class files
 - Use Overleaf for no-install editing
 
 ---

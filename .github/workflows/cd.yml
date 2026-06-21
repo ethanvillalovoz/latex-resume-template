@@ -16,13 +16,24 @@ jobs:
         with:
           root_file: resume.tex
           working_directory: src
+          latexmk_use_xelatex: true
+
+      - name: Compile cv.tex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: src/cv
+          latexmk_use_xelatex: true
+
+      - name: Prepare GitHub Pages files
+        run: |
+          mkdir -p public
+          cp src/resume.pdf public/resume.pdf
+          cp src/cv/cv.pdf public/cv.pdf
 
       - name: Deploy PDF to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: src
+          publish_dir: public
           keep_files: false
-          destination_dir: .
-          exclude_assets: |
-            !resume.pdf

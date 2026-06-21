@@ -8,7 +8,7 @@ This is a personal record of companies where I received interview opportunities 
 - Microsoft (September 2025)
 - Google (September 2025)
 - OpenAI (October 2025)
-- Databricks (Ocotober 2025)
+- Databricks (October 2025)
 - NVIDIA (December 2025)
 - NVIDIA (January 2026)
 - Boston Dynamics (February 2026)
@@ -24,7 +24,7 @@ This is a personal record of companies where I received interview opportunities 
 - Snapchat (August 2025)
 - Applied Intuition (September 2025)
 - Anthropic (September 2025) 
-- Databricks (Ocotober 2025)
+- Databricks (October 2025)
 
 Notes
 -----
