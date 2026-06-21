@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented here.
 
+## [Unreleased]
+
+### Changed
+- Updated the GitHub Actions LaTeX build workflow to use `xu-cheng/latex-action@v4`.
+- Clarified documentation to direct users toward the blank starter files.
+- Cleaned stale commented CV source content without changing rendered CV behavior.
+
 ## [1.0.0] - 2026-06-21
 
 ### Added

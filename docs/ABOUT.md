@@ -96,8 +96,9 @@ The CV is not a stretched resume. It is a scholarly record, so it uses a differe
 
 Feel free to:
 - Fork the repo
-- Replace content in `src/resume.tex`
-- Replace content in `src/cv/cv.tex`
+- Start from `src/starter-resume.tex` for a blank resume
+- Start from `src/cv/starter-cv.tex` for a blank academic CV
+- Use `src/resume.tex` and `src/cv/cv.tex` as polished examples
 - Tweak formatting using the LaTeX macros and class files
 - Use Overleaf for no-install editing
 
