@@ -1,0 +1,7 @@
+*.md text eol=lf
+*.tex text eol=lf
+*.cls text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.pdf binary
+*.png binary

@@ -27,10 +27,10 @@ Thank you for your interest in contributing! Your help is appreciated to make th
 To verify your changes build correctly:
 ```bash
 cd src
-latexmk -xelatex resume.tex
+latexmk -xelatex -interaction=nonstopmode resume.tex
 
 cd cv
-latexmk -xelatex cv.tex
+latexmk -xelatex -interaction=nonstopmode cv.tex
 ```
 
 Ensure `resume.pdf` and `cv.pdf` are generated and no errors appear in the logs.
@@ -58,4 +58,4 @@ Be respectful and constructive. Disrespectful or inappropriate behavior will not
 
 ---
 
-Thank you for helping
+Thank you for helping improve the template.

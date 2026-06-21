@@ -1,9 +1,9 @@
 # 💼 Ethan's LaTeX Resume & Academic CV Template
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![License: MIT](https://img.shields.io/badge/license-MIT-blue)
+[![CI](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/ci.yml/badge.svg)](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/ci.yml)
+[![CD](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/cd.yml/badge.svg)](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/cd.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 ![Overleaf Compatible](https://img.shields.io/badge/overleaf-supported-success)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)
 
 ---
 
@@ -13,8 +13,9 @@ A clean, ATS-friendly LaTeX resume template and a companion academic CV template
 
 The repository includes:
 - A modern one-page technical resume based on Jake's Resume
-- A two-page academic CV based on a classic `res.cls` CV layout
-- Source files that compile cleanly on Overleaf or with a local LaTeX installation
+- A two-page academic CV based on a classic `res.cls` layout
+- Rendered PDF previews for both documents
+- GitHub Actions workflows that compile the resume and CV automatically
 
 ---
 
@@ -65,7 +66,7 @@ See [docs/COMPANIES.md](docs/COMPANIES.md) for a list of companies where this re
 
 ---
 
-## ⚡ QuickStart Guide (Overleaf)
+## ⚡ Quick Start (Overleaf)
 
 1. **Download or clone the repository:**
    ```bash
@@ -98,26 +99,27 @@ For the CV, keep `src/cv/res.cls` in the same folder as `cv.tex`.
 
 ---
 
-## 🗂️ Folder Structure
+## 🗂️ Repository Structure
 
 ```
 latex-resume-template/
 ├── .github/                 # GitHub templates and workflows
 │   ├── ISSUE_TEMPLATE/
-│   ├── workflows/           # CI/CD workflows for automated PDF build & deploy
+│   ├── workflows/           # CI/CD workflows for PDF builds and Pages deploy
 │   └── PULL_REQUEST_TEMPLATE.md
-├── docs/                    # Documentation and preview
+├── docs/                    # Documentation, previews, and rendered PDFs
 │   ├── ABOUT.md
+│   ├── COMPANIES.md
 │   ├── preview.png
 │   ├── resume.pdf
 │   ├── cv-preview.png
 │   └── cv.pdf
 ├── src/                     # LaTeX source files
 │   ├── resume.tex
-│   ├── cv/
-│   │   ├── cv.tex
-│   │   └── res.cls
-│   └── prev_resume/
+│   └── cv/
+│       ├── cv.tex
+│       └── res.cls
+├── .gitattributes
 ├── .gitignore
 ├── CONTRIBUTING.md
 ├── LICENSE

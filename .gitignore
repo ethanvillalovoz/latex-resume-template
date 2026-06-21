@@ -5,6 +5,13 @@
 *.fdb_latexmk
 *.fls
 *.xdv
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.toc
+*.dvi
+*.ps
 .DS_Store
 src/*.pdf
 src/**/*.pdf
