@@ -12,7 +12,14 @@
 *.toc
 *.dvi
 *.ps
+*.synctex
+*.nav
+*.snm
+*.vrb
 .DS_Store
 src/*.pdf
 src/**/*.pdf
 !docs/*.pdf
+.venv/
+__pycache__/
+*.py[cod]

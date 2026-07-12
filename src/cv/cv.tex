@@ -1,5 +1,5 @@
 %-------------------------
-% CV in Latex
+% Academic CV in LaTeX
 % Author : Ethan Villalovoz
 % Based off of: https://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html
 % License : MIT
@@ -11,6 +11,13 @@
 \usepackage[dvipsnames]{xcolor}
 
 \definecolor{cvblue}{HTML}{0a5994}
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Ethan Villalovoz - Academic CV},
+  pdfauthor={Ethan Villalovoz},
+  pdfsubject={Robot learning, human-robot interaction, and computer science research},
+  pdfkeywords={robot learning, human-robot interaction, machine learning, academic CV}
+}
 
 \oddsidemargin -.5in
 \evensidemargin -.5in
@@ -22,7 +29,7 @@
 
 %-----------------------------------------------------------------
 
-\name{\makebox[\textwidth]{Ethan Villalovoz \hfill \normalfont\normalsize\it (Last Updated: June 2026)}}
+\name{\makebox[\textwidth]{Ethan Villalovoz \hfill \normalfont\normalsize\it (Last Updated: July 2026)}}
 
 %-----------------------------------------------------------------
 
@@ -37,7 +44,7 @@ Sacramento, California, United States & {\it Links:} \href{https://ethanvillalov
 %-----------------------------------------------------------------
 
 \section{\sc Research Interests}
-Robot learning and human–robot interaction, with interests in robot policy learning, reward learning, uncertainty-aware interaction, and aligning robot behavior with human intent under ambiguity.
+Robot learning and human--robot interaction, with interests in robot policy learning, reward learning, uncertainty-aware interaction, and aligning robot behavior with human intent under ambiguity.
 
 %-----------------------------------------------------------------
 
@@ -55,11 +62,11 @@ Robot learning and human–robot interaction, with interests in robot policy lea
 
 %-----------------------------------------------------------------
 
-\section{\sc Pre-Prints}
+\section{\sc Preprints}
 
 \begin{tabularx}{\textwidth}{@{}l X@{}}
 [P1] &
-\textbf{An Exploratory Study of Bayesian Prompt Optimization for Test-Driven Code Generation with Large Language Models}. \\
+\href{https://arxiv.org/abs/2512.15076}{\textcolor{cvblue}{\textbf{An Exploratory Study of Bayesian Prompt Optimization for Test-Driven Code Generation with Large Language Models}}}. \\
 & S. Tomar, A. Deshwal, \underline{E. Villalovoz}, M. Fazzini, H. Cai, J.R. Doppa. \\
 & \emph{arXiv:2512.15076}, 2025. \\
 \end{tabularx}
@@ -70,9 +77,9 @@ Robot learning and human–robot interaction, with interests in robot policy lea
 
 \begin{tabularx}{\textwidth}{@{}l X@{}}
 [C1] &
-\textbf{Social Triangles and Aggressive Lines: Multi-Robot Formations Impact}
+\href{https://ethanvillalovoz.com/data/research/2023_OSU_Social_Triangles_and_Aggressive_Lines/2023_IROS_Social_Triangles_Agressive_Lines_bacula.pdf}{\textcolor{cvblue}{\textbf{Social Triangles and Aggressive Lines: Multi-Robot Formations Impact}}}
 
-\textbf{Navigation and Approach}. \\
+\href{https://ethanvillalovoz.com/data/research/2023_OSU_Social_Triangles_and_Aggressive_Lines/2023_IROS_Social_Triangles_Agressive_Lines_bacula.pdf}{\textcolor{cvblue}{\textbf{Navigation and Approach}}}. \\
 & A. Bacula, \underline{E. Villalovoz}, D. Flynn, A. Mehta, H. Knight. \\
 & \emph{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2023. \\
 \end{tabularx}
@@ -174,7 +181,6 @@ Invited to speak with undergraduate researchers about graduate-school applicatio
 
 \begin{tabularx}{\textwidth}{@{}X r@{}}
 \textbf{WSU \href{https://vcea.wsu.edu/student-success/}{\textcolor{cvblue}{VCEA}}} (College Ambassador) & {2022 -- 2024} \\
-% \emph{Voiland } &  \\
 \end{tabularx}
 Represented Voiland College to industry partners, alumni, and prospective students.
 

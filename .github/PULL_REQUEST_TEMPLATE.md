@@ -1,28 +1,18 @@
-# Pull Request
+## What changed
 
-Thank you for your contribution! Please fill out the following checklist and provide details about your changes.
+<!-- Describe the source, layout, documentation, or automation change. -->
 
-## Description
+## Visual evidence
 
-<!-- Summarize the template, documentation, workflow, or preview change. Include motivation and context. -->
+<!-- Attach before/after pages when rendered output changes. Remove personal data. -->
 
-Fixes #(issue)
+## Verification
 
-## Type of change
-- [ ] LaTeX template fix
-- [ ] Documentation update
-- [ ] Workflow/CI update
-- [ ] Preview/PDF update
-- [ ] Other (please describe):
+- [ ] All four TeX entry points compile with XeLaTeX.
+- [ ] `python scripts/verify_pdfs.py` passes on the compiled outputs.
+- [ ] Resume examples remain one page and the academic CV example remains two pages.
+- [ ] Extracted PDF text remains readable and complete.
+- [ ] Preview PDFs and PNGs were regenerated when layout changed.
+- [ ] Documentation and changelog entries were updated when relevant.
 
-## Checklist
-- [ ] My changes follow the existing LaTeX and Markdown style
-- [ ] I have performed a self-review of my code
-- [ ] I have made corresponding changes to the documentation (if relevant)
-- [ ] I compiled any changed `.tex` files locally or verified the CI result
-- [ ] My changes do not introduce avoidable LaTeX warnings
-- [ ] Updated preview PDFs/images are included when the visual output changed
-
-## Additional context
-
-<!-- Add any other context about the PR here. -->
+Closes #

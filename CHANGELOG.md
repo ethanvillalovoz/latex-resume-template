@@ -1,27 +1,32 @@
 # Changelog
 
-All notable changes to this project are documented here.
+All notable changes to the template are documented here.
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-07-11
+
+### Added
+
+- PDF verification for page counts, US Letter geometry, metadata, and text extraction.
+- Local Make targets for building, checking, regenerating previews, and cleaning.
+- Searchable title, author, subject, and keyword metadata in all four documents.
+- Third-party notices, security guidance, structured issue forms, and dependency updates.
+
 ### Changed
-- Updated the GitHub Actions LaTeX build workflow to use `xu-cheng/latex-action@v4`.
-- Clarified documentation to direct users toward the blank starter files.
-- Cleaned stale commented CV source content without changing rendered CV behavior.
+
+- Rebuilt the README around the rendered resume and CV artifacts.
+- Pinned CI to TeX Live 2026 and current GitHub action majors.
+- Updated the example CV date, publication links, terminology, and ASCII-safe LaTeX punctuation.
+- Updated the knowledge-graph project URL to its current repository.
+- Reframed interview outcomes as observational context rather than a causal claim.
 
 ## [1.0.0] - 2026-06-21
 
-### Added
-- One-page technical resume template and rendered preview.
-- Academic CV template and rendered preview.
-- Blank starter resume at `src/starter-resume.tex`.
-- Blank starter academic CV at `src/cv/starter-cv.tex`.
-- CI workflow that compiles the example and starter documents.
-- Documentation for template design, company outcomes, FAQ, and contribution guidelines.
+- Added one-page technical resume and academic CV examples.
+- Added neutral starter documents, rendered previews, baseline CI, and documentation.
+- Removed legacy resume artifacts from the public tree.
 
-### Changed
-- Cleaned repository structure for public reuse.
-- Replaced static build badges with real GitHub Actions status badges.
-
-### Removed
-- Removed legacy previous-resume artifacts from the public repository tree.
+[Unreleased]: https://github.com/ethanvillalovoz/latex-resume-template/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/ethanvillalovoz/latex-resume-template/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/ethanvillalovoz/latex-resume-template/releases/tag/v1.0.0

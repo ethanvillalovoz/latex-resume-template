@@ -4,47 +4,52 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  compile:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - name: Compile resume.tex
+      - name: Compile all templates
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: resume.tex
-          working_directory: src
+          root_file: |
+            src/resume.tex
+            src/starter-resume.tex
+            src/cv/cv.tex
+            src/cv/starter-cv.tex
+          work_in_root_file_dir: true
           latexmk_use_xelatex: true
+          texlive_version: 2026
+          os: debian
 
-      - name: Compile starter-resume.tex
-        uses: xu-cheng/latex-action@v4
+      - uses: actions/setup-python@v6
         with:
-          root_file: starter-resume.tex
-          working_directory: src
-          latexmk_use_xelatex: true
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
 
-      - name: Compile cv.tex
-        uses: xu-cheng/latex-action@v4
-        with:
-          root_file: cv.tex
-          working_directory: src/cv
-          latexmk_use_xelatex: true
+      - name: Verify PDFs
+        run: |
+          python -m pip install -r requirements-dev.txt
+          python scripts/verify_pdfs.py
 
-      - name: Compile starter-cv.tex
-        uses: xu-cheng/latex-action@v4
-        with:
-          root_file: starter-cv.tex
-          working_directory: src/cv
-          latexmk_use_xelatex: true
-
-      - name: Upload PDF artifacts
+      - name: Upload compiled documents
         uses: actions/upload-artifact@v4
         with:
           name: latex-documents
+          retention-days: 7
+          if-no-files-found: error
           path: |
             src/resume.pdf
             src/starter-resume.pdf

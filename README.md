@@ -1,173 +1,103 @@
-# 💼 Ethan's LaTeX Resume & Academic CV Template
+# LaTeX Resume + Academic CV
 
 [![CI](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/ci.yml/badge.svg)](https://github.com/ethanvillalovoz/latex-resume-template/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-![Overleaf Compatible](https://img.shields.io/badge/overleaf-supported-success)
+[![Overleaf](https://img.shields.io/badge/Overleaf-compatible-138a62)](https://www.overleaf.com/)
+[![MIT License](https://img.shields.io/badge/license-MIT-171717)](LICENSE)
 
----
+Two restrained, text-extraction-tested LaTeX templates: a one-page technical resume and a research-oriented academic CV.
 
-## 🚀 Introduction
+| Technical resume | Academic CV |
+| --- | --- |
+| [![Technical resume preview](docs/preview.png)](docs/resume.pdf) | [![Academic CV preview](docs/cv-preview.png)](docs/cv.pdf) |
+| [Open example PDF](docs/resume.pdf) | [Open example PDF](docs/cv.pdf) |
 
-A clean, ATS-friendly LaTeX resume template and a companion academic CV template designed for clarity, credibility, and easy customization.
+The examples use real software engineering and research content; the starter files contain neutral placeholders. Both tracks compile with XeLaTeX, preserve selectable text, include searchable PDF metadata, and use visible but conservative links.
 
-The repository includes:
-- A modern one-page technical resume based on Jake's Resume
-- A two-page academic CV based on a classic `res.cls` layout
-- Blank starter files for both the resume and academic CV
-- Rendered PDF previews for both documents
-- A GitHub Actions workflow that compiles every TeX entry point automatically
+## Choose A Starting Point
 
----
+| Goal | Start here | Example |
+| --- | --- | --- |
+| Technical recruiting | [`src/starter-resume.tex`](src/starter-resume.tex) | [`src/resume.tex`](src/resume.tex) |
+| Research, fellowships, or graduate applications | [`src/cv/starter-cv.tex`](src/cv/starter-cv.tex) | [`src/cv/cv.tex`](src/cv/cv.tex) |
 
-## 📋 Description
+The resume is intentionally selective and one page. The CV gives publications, advisors, teaching, awards, and service room to breathe.
 
-The resume template emphasizes:
-- **Minimalist one-page layout** for technical recruiting
-- **Machine-readable PDF output** for ATS compatibility
-- **Compact sections** for education, experience, publications, projects, and skills
-- **Visible but conservative link styling** using `#0a5994`
+## Use In Overleaf
 
-The CV template emphasizes:
-- **Academic ordering** with research interests, education, publications, experience, awards, teaching, and outreach
-- **Advisor and publication context** for research-oriented applications
-- **Readable two-page structure** without forcing resume-style compression
+1. Download this repository as a ZIP.
+2. Create an Overleaf project with **New Project > Upload Project**.
+3. For a resume, set `src/starter-resume.tex` as the main document.
+4. For a CV, set `src/cv/starter-cv.tex` as the main document and keep `src/cv/res.cls` beside it.
+5. Select XeLaTeX and compile.
 
----
+The templates are self-contained and do not require custom fonts.
 
-## 🖼️ Visuals
+## Build Locally
 
-### Resume
+Install TeX Live with `latexmk` and XeLaTeX, then:
 
-![Resume Preview](docs/preview.png)
-
-### Academic CV
-
-![Academic CV Preview](docs/cv-preview.png)
-
----
-
-## 🛠️ Technologies Used
-
-- **LaTeX** (core typesetting)
-- **Resume packages**: `fullpage`, `titlesec`, `marvosym`, `tabularx`, `hyperref`, `fancyhdr`, `enumitem`, `xcolor`
-- **CV class**: `res.cls` with `tabularx`, `hyperref`, and `xcolor`
-- **PDF output**: ATS-friendly, machine-readable
-- **Platforms**: Overleaf, local LaTeX workflows, and GitHub Actions
-
----
-
-## 📖 About the Template
-
-Curious about the design philosophy, technical choices, and why this template works so well for technical roles?  
-
-See [docs/ABOUT.md](docs/ABOUT.md) for a deep dive into the reasoning behind the layout, ATS compatibility, and customization features.
-
-See [docs/COMPANIES.md](docs/COMPANIES.md) for a list of companies where this resume has earned me interview opportunities for both internships and full-time roles.
-
-See [docs/FAQ.md](docs/FAQ.md) for common Overleaf, compiler, and customization questions.
-
----
-
-## ⚡ Quick Start (Overleaf)
-
-1. **Download or clone the repository:**
-   ```bash
-   git clone https://github.com/ethanvillalovoz/latex-resume-template.git
-   ```
-   or simply click **“Download ZIP”** from GitHub.
-
-2. **Upload to Overleaf:**
-   - Go to [Overleaf](https://overleaf.com/)
-   - Create a **New Project → Upload Project**
-   - Upload the entire `src/` folder
-
-3. **Edit and compile:**
-   - Start from `src/starter-resume.tex` for a blank resume
-   - Start from `src/cv/starter-cv.tex` for a blank academic CV
-   - Use `src/resume.tex` and `src/cv/cv.tex` as polished examples
-   - Click **Recompile** to generate your PDF
-   - Download the final PDF
-
-For the CV, keep `src/cv/res.cls` in the same folder as `cv.tex` or `starter-cv.tex`.
-
----
-
-## 🔧 Customization
-
-- **Contact Info**: Update your name, email, phone, and links at the top of `resume.tex`
-- **Section Content**: Use `\resumeItem{}` for bullet points and `\resumeSubheading{}` for roles or education
-- **Bold Technologies**: Use `\textbf{}` to highlight programming languages or tools
-- **Style Adjustments**: Modify the preamble to change fonts, spacing, or colors
-- **Starter Files**: Copy `src/starter-resume.tex` or `src/cv/starter-cv.tex` when building your own document
-- **Academic CV**: Keep `src/cv/res.cls` alongside `cv.tex` or `starter-cv.tex` for compilation
-
----
-
-## 🗂️ Repository Structure
-
+```sh
+git clone https://github.com/ethanvillalovoz/latex-resume-template.git
+cd latex-resume-template
+python3 -m pip install -r requirements-dev.txt
+make check
 ```
-latex-resume-template/
-├── .github/                 # GitHub templates and workflows
-│   ├── ISSUE_TEMPLATE/
-│   ├── workflows/           # CI workflow for PDF builds
-│   └── PULL_REQUEST_TEMPLATE.md
-├── docs/                    # Documentation, previews, and rendered PDFs
-│   ├── ABOUT.md
-│   ├── COMPANIES.md
-│   ├── FAQ.md
-│   ├── preview.png
-│   ├── resume.pdf
-│   ├── cv-preview.png
-│   └── cv.pdf
-├── src/                     # LaTeX source files
-│   ├── resume.tex
-│   ├── starter-resume.tex
+
+`make check` compiles all four entry points and verifies:
+
+- expected page counts
+- US Letter page geometry
+- title and author metadata
+- non-empty, readable text extraction on every page
+- document-specific section markers
+- absence of Unicode replacement characters
+
+Regenerate the committed example PDFs and first-page previews after a visual change:
+
+```sh
+make previews
+```
+
+## Customize Deliberately
+
+- Replace contact details and PDF metadata before changing content.
+- Keep bullets evidence-led: what you built, how it worked, and what changed.
+- Remove weak sections before shrinking type or margins.
+- Use `\resumeSubheading`, `\resumeProjectHeading`, and `\resumeItem` to preserve alignment.
+- Keep your own name visually distinct in publication author lists.
+- Re-run text extraction checks after adding uncommon symbols or fonts.
+
+Read [Why these layouts work](docs/ABOUT.md) for the design rationale and [FAQ](docs/FAQ.md) for compiler, spacing, color, and ATS guidance.
+
+## Repository Layout
+
+```text
+.
+├── src/
+│   ├── resume.tex                 # Technical resume example
+│   ├── starter-resume.tex         # Technical resume starter
 │   └── cv/
-│       ├── cv.tex
-│       ├── starter-cv.tex
-│       └── res.cls
-├── .gitattributes
-├── .gitignore
-├── CHANGELOG.md
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-└── README.md
+│       ├── cv.tex                 # Academic CV example
+│       ├── starter-cv.tex         # Academic CV starter
+│       └── res.cls                # Vendored CV class with original notice
+├── scripts/verify_pdfs.py         # Metadata, geometry, and extraction gate
+├── docs/                          # Rendered examples and guidance
+├── Makefile                       # Build, verify, preview, and clean targets
+└── .github/workflows/ci.yml       # Reproducible TeX Live 2026 build
 ```
 
----
+## What ATS-Friendly Means Here
 
-## 🛣️ Roadmap
+These PDFs use selectable text, semantic section names, ordinary fonts, and tested extraction. That removes several common parser failure modes, but no template can guarantee behavior across every applicant tracking system. Always inspect the text extracted from your final customized PDF.
 
-- [x] Overleaf-only version for easier use  
-- [x] Add academic CV source and preview
-- [x] Add Publications section support
-- [x] Add blank starter files for public reuse
-- [x] Expand documentation with FAQ and contribution standards
-- [ ] Provide alternate color schemes
+## Privacy
 
----
+The example files intentionally contain the author's public professional information. Replace all names, email addresses, phone numbers, URLs, locations, and PDF metadata before publishing your own copy. Sanitize customized documents before attaching them to an issue.
 
-## 🤝 Contribution
+## Provenance
 
-Contributions are welcome!  
-To contribute:
-1. Fork the repo and create a new branch  
-2. Make your improvements (e.g., design tweaks, doc edits)  
-3. Open a pull request with a clear description  
+The technical resume is based on Jake's Resume. The academic CV includes the classic `res.cls`. See [Third-Party Notices](THIRD_PARTY_NOTICES.md) for attribution and retained terms.
 
-For more details, see [CONTRIBUTING.md](CONTRIBUTING.md).
+## License
 
----
-
-## 📜 License
-
-MIT License — free to use, modify, and share. Attribution appreciated, but not required.
-
----
-
-## 💬 Contact
-
-If this template helps you land an interview or job, I’d love to hear about it!  
-
-Reach out at **ethan.villalovoz@gmail.com**
+Original contributions are released under the [MIT License](LICENSE). Third-party components retain their original notices.

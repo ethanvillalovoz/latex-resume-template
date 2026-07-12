@@ -1,0 +1,56 @@
+name: Build or layout bug
+description: Report a reproducible compilation, rendering, or text-extraction issue.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: document
+    attributes:
+      label: Document
+      options:
+        - Resume example
+        - Starter resume
+        - Academic CV example
+        - Starter academic CV
+        - Documentation or automation
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed and expected output.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include the command or Overleaf steps and a minimal source change if relevant.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include operating system, editor, compiler, and TeX distribution/version.
+      placeholder: |
+        OS: macOS 15
+        Editor: Overleaf
+        Compiler: XeLaTeX
+        TeX distribution: TeX Live 2026
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized log or screenshot
+      description: Remove personal contact information before attaching customized documents.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed private contact details and other sensitive resume content.
+          required: true

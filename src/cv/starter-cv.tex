@@ -9,6 +9,13 @@
 \usepackage[dvipsnames]{xcolor}
 
 \definecolor{cvblue}{HTML}{0a5994}
+\urlstyle{same}
+\hypersetup{
+  pdftitle={First Last - Academic CV},
+  pdfauthor={First Last},
+  pdfsubject={Academic curriculum vitae},
+  pdfkeywords={research, publications, academic CV}
+}
 
 \oddsidemargin -.5in
 \evensidemargin -.5in
@@ -44,11 +51,11 @@ One-sentence research identity describing your field, methods, and long-term int
 \emph{B.S. in Computer Science}, Minor or Honors & GPA: 3.9/4.0 \\
 \end{tabularx}
 
-\section{\sc Pre-Prints}
+\section{\sc Preprints}
 
 \begin{tabularx}{\textwidth}{@{}l X@{}}
 [P1] &
-\textbf{Paper Title: Concise Subtitle if Needed}. \\
+\href{https://example.com/preprint}{\textcolor{cvblue}{\textbf{Paper Title: Concise Subtitle if Needed}}}. \\
 & A. Author, \underline{F. Last}, B. Collaborator. \\
 & \emph{arXiv:0000.00000}, 2026. \\
 \end{tabularx}
@@ -57,7 +64,7 @@ One-sentence research identity describing your field, methods, and long-term int
 
 \begin{tabularx}{\textwidth}{@{}l X@{}}
 [C1] &
-\textbf{Conference Paper Title}. \\
+\href{https://example.com/paper}{\textcolor{cvblue}{\textbf{Conference Paper Title}}}. \\
 & A. Author, \underline{F. Last}, B. Collaborator. \\
 & \emph{Conference Name}, 2026. \\
 \end{tabularx}
