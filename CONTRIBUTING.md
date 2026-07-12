@@ -1,65 +1,42 @@
-# Contributing to Ethan's LaTeX Resume Template
+# Contributing
 
-Thank you for your interest in contributing! Your help is appreciated to make this template better for everyone.
+Contributions should preserve readable typography, clean text extraction, and a low-friction Overleaf workflow.
 
----
+## Setup
 
-## How to Contribute
+Install TeX Live with XeLaTeX and `latexmk`, then:
 
-1. **Fork the repository** and create your branch from `main`.
-2. **Make your changes** (improve the template, documentation, or add features).
-3. **Test your changes** locally (see below).
-4. **Open a Pull Request** and fill out the PR template.
-
----
-
-## Guidelines
-
-- Follow the existing code and documentation style.
-- Use clear, descriptive commit messages.
-- For significant changes, please open an issue first to discuss what you’d like to change.
-- Keep PRs focused and minimal—one feature or fix per PR is best.
-- Follow the [Code of Conduct](CODE_OF_CONDUCT.md).
-
----
-
-## Running Automated Tests
-
-To verify your changes build correctly:
-```bash
-cd src
-latexmk -xelatex -interaction=nonstopmode resume.tex
-latexmk -xelatex -interaction=nonstopmode starter-resume.tex
-
-cd cv
-latexmk -xelatex -interaction=nonstopmode cv.tex
-latexmk -xelatex -interaction=nonstopmode starter-cv.tex
+```sh
+git clone https://github.com/ethanvillalovoz/latex-resume-template.git
+cd latex-resume-template
+python3 -m pip install -r requirements-dev.txt
+make check
 ```
 
-Ensure all four PDFs are generated and no errors appear in the logs.
+## Before A Pull Request
 
----
+1. Compile all four TeX entry points with `make check`.
+2. Inspect every changed page at normal zoom and in grayscale.
+3. Confirm section labels, dates, links, and long lines do not collide or clip.
+4. Regenerate `docs/*.pdf` and preview PNGs with `make previews` when output changes.
+5. Review extracted text for reading order and uncommon-character failures.
+6. Update documentation and `CHANGELOG.md` when behavior changes.
 
-## Issue Reporting
+## Scope
 
-- Use the [bug report](.github/ISSUE_TEMPLATE/bug_report.md) or [feature request](.github/ISSUE_TEMPLATE/feature_request.md) templates.
-- Provide as much detail as possible, including steps to reproduce bugs.
+- Keep template changes focused and generally useful.
+- Preserve the one-page contract for both resume files.
+- Preserve the two-page example CV unless a pull request explicitly justifies a structural change.
+- Avoid optional fonts, shell escape, or platform-specific packages without a strong reason.
+- Do not include customized resumes with private contact details in issues or fixtures.
+- Retain third-party attribution and embedded class notices.
 
----
+## Generated Files
 
-## Code of Conduct
+The example PDFs and first-page PNGs are committed so visitors can inspect the templates without compiling LaTeX. They must correspond to the current example sources. Starter PDFs are CI artifacts and are not committed.
 
-Be respectful and constructive. Disrespectful or inappropriate behavior will not be tolerated.
+## Reporting Problems
 
----
+Use the structured issue form and include the affected document, compiler, TeX distribution, minimal reproduction, and sanitized log. Remove personal information from screenshots and customized source.
 
-## Resources
-
-- [README.md](README.md) — Project overview and usage
-- [docs/FAQ.md](docs/FAQ.md) — Common usage and compilation questions
-- [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) — Issue templates
-- [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md) — PR template
-
----
-
-Thank you for helping improve the template.
+Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).

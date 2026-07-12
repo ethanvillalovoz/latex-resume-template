@@ -3,5 +3,7 @@
 *.cls text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
+*.py text eol=lf
+Makefile text eol=lf
 *.pdf binary
 *.png binary

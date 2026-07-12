@@ -1,117 +1,46 @@
-# 🧠 Behind the Resume and CV: Why These Templates Work
+# Why These Layouts Work
 
-This LaTeX template repository was created and refined by Ethan Villalovoz to support two public-facing career documents:
+This repository separates two documents that are often forced into one format.
 
-- a concise, ATS-friendly technical resume for software engineering, AI/ML, robotics, and research engineering roles
-- an academic CV for research-oriented contexts where publications, advisors, teaching, and outreach matter
+## Technical Resume
 
-Both documents are intentionally conservative: readable typography, semantic text, visible links, and no visual tricks that make the PDF harder to parse.
+The resume is a one-page decision surface for technical recruiting. Its hierarchy makes four questions easy to answer quickly:
 
----
+1. What has this person worked on?
+2. What did they personally own?
+3. How technically deep was the work?
+4. What evidence shows that it mattered?
 
-## 🎯 Purpose & Audience
+The layout supports that scan with compact section rules, aligned organizations and dates, short role lines, and bullets that preserve enough width for technical detail. Selective bolding identifies systems, methods, and measured outcomes; it should not turn every noun into emphasis.
 
-The resume template is designed for:
-- Students and early-career professionals applying to **internships**, **fellowships**, **research roles**, and **new grad tech positions**
-- Developers and researchers looking to showcase **projects**, **technical skills**, and **experience** concisely
-- Anyone who wants a **LaTeX-powered**, fully customizable resume with clean formatting
+The starter includes education, experience, publications, projects, and skills because that combination works for early-career software, AI/ML, robotics, and research-engineering candidates. Remove a section when it is weak rather than keeping it for symmetry.
 
-The academic CV template is designed for:
-- Research-oriented students and early-career researchers
-- Academic websites, graduate applications, lab applications, and research programs
-- Situations where publications, teaching, advisors, and outreach should not be compressed into a one-page resume
+## Academic CV
 
----
+The CV is a scholarly record, not an expanded resume. It introduces research direction first, then separates preprints and peer-reviewed publications before experience. Advisor names, teaching, awards, and outreach remain visible because they provide useful context for labs, fellowships, and graduate applications.
 
-## ✅ Why the Resume Template Works
+The left-margin section labels create a stable navigation column while the wider body column carries citations and research descriptions. Healthy page-two whitespace is preferable to padding the document with low-signal entries.
 
-### 📌 1. **ATS-Compatible & PDF-Readable**
-- Uses `\pdfgentounicode=1` to ensure machine-readable output
-- Avoids tables and graphics that can break ATS parsing
-- Prioritizes semantic structure (e.g., headings, bullet points, links)
+## PDF And Extraction Choices
 
-### 🎨 2. **Minimalist & Scannable**
-- Clear, single-page layout with tightly controlled spacing
-- Bolded **technologies** and **key phrases** improve skimmability
-- Focused on high-impact bullet points with quantifiable results
+- Both templates use ordinary text rather than image-based content.
+- XeLaTeX produces selectable Unicode text without requiring custom fonts.
+- Contact links are visible in a muted blue and remain clickable.
+- PDF title, author, subject, and keyword metadata are explicit.
+- CI checks US Letter geometry, expected page counts, section markers, and extracted text.
 
-### ✍️ 3. **Bullets Emphasize Evidence**
-Strong bullets usually follow the **XYZ formula** when it fits naturally:
-> **"Accomplished X, by doing Y, as measured by Z"**
+The resume does use alignment tables internally. What matters for downstream systems is the resulting PDF text order, which the verification script checks. ATS products still vary, so test the exact PDF you submit.
 
-This ensures:
-- Every line demonstrates **impact**, not just responsibility
-- You communicate both **technical depth** and **business value**
-- Recruiters and hiring managers immediately understand your contributions
+## Writing Strong Content
 
-Example:
-> “Optimized data sampling strategies to scale job execution from **1% to 100%** within **4 hours**, achieving a **66% reduction in runtime**”
+A useful bullet usually identifies an action, a technical mechanism, and an outcome. Quantification helps when it describes a real scale, latency, accuracy, cost, adoption, or reliability change. It should not be invented to satisfy a formula.
 
-### 🛠 4. **Custom LaTeX Commands for Reusability**
-- `\resumeItem{}` for clean bullet formatting
-- `\resumeSubheading{}` and `\resumeProjectHeading{}` for layout consistency
-- Easy to add sections or modify spacing using defined macros
+Prefer:
 
-### 💡 5. **Tailored for Technical Roles**
-- Shows off technical depth with sections like:
-  - **Technical Skills** (grouped by purpose)
-  - **Projects** with tech stacks and outcomes
-  - **Experience** with clear, outcome-driven bullet points
+> Built five C++/SQL analytics jobs and scaled metric computation from 1% to full dataset coverage within four hours, reducing runtime by 66%.
 
----
+Avoid responsibility-only lines that could describe anyone on the team.
 
-## 🎓 Why the Academic CV Template Works
+## Evidence From Use
 
-The CV is not a stretched resume. It is a scholarly record, so it uses a different structure:
-
-- **Research Interests** appear near the top to establish academic direction.
-- **Publications** are placed before experience because peer-reviewed and preprint work carry research signal.
-- **Experience** entries are concise and include advisors when relevant.
-- **Teaching, awards, and outreach** are preserved as academic evidence rather than trimmed for one-page density.
-- The template accepts healthy page-two whitespace instead of padding weak content.
-
----
-
-## 🔍 Design Highlights
-
-| Feature                     | Description |
-|----------------------------|-------------|
-| 🧩 Modular Commands         | Custom LaTeX macros for education, work, and projects |
-| 📄 ATS-Friendly PDF         | Machine-readable format, no images or messy tables |
-| ⚡ High Signal-to-Noise     | No fluff—only relevant experience and achievements |
-| 🧠 Smart Emphasis           | Uses `\textbf{}` selectively to guide recruiter focus |
-| 🌐 Linkable Metadata        | Contact info, GitHub, LinkedIn, and personal site at the top |
-
----
-
-## 🧰 Tools & Packages Used
-
-- Resume: `fullpage`, `titlesec`, `marvosym`, `tabularx`, `hyperref`, `fancyhdr`, `enumitem`, `xcolor`, and `glyphtounicode`
-- CV: `res.cls`, `tabularx`, `hyperref`, and `xcolor`
-- Preambles are tuned for readability, layout control, and PDF text extraction
-
----
-
-## 🤝 Want to Use or Adapt It?
-
-Feel free to:
-- Fork the repo
-- Start from `src/starter-resume.tex` for a blank resume
-- Start from `src/cv/starter-cv.tex` for a blank academic CV
-- Use `src/resume.tex` and `src/cv/cv.tex` as polished examples
-- Tweak formatting using the LaTeX macros and class files
-- Use Overleaf for no-install editing
-
----
-
-## 💬 Creator Note
-
-> "I made this because I never found a LaTeX resume that felt both modern and practical for tech applications. I believe resume templates should be free, accessible, and optimized for real success — not gatekept behind templates that lack substance or clarity."  
->
-> — *Ethan Villalovoz*
-
----
-
-## 📜 License
-
-This resume template is open-source under the MIT License. Attribution is appreciated but not required.
+The example format has accompanied interview opportunities across research labs, large technology companies, and robotics organizations. That observation does not establish that layout caused the outcomes; content, experience, timing, referrals, and role fit matter more. The record is documented in [Observed Interview Outcomes](COMPANIES.md) for transparency rather than as a guarantee.
