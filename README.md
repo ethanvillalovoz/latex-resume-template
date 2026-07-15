@@ -4,7 +4,7 @@
 [![Overleaf](https://img.shields.io/badge/Overleaf-compatible-138a62)](https://www.overleaf.com/)
 [![MIT License](https://img.shields.io/badge/license-MIT-171717)](LICENSE)
 
-Two restrained, text-extraction-tested LaTeX templates: a one-page technical resume and a research-oriented academic CV.
+Two LaTeX starting points I use for different jobs: a selective one-page technical resume and a longer academic CV. CI compiles both and checks that the resulting PDFs still extract clean text.
 
 | Technical resume | Academic CV |
 | --- | --- |
