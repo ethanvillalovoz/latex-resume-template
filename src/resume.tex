@@ -118,12 +118,11 @@
 \begin{center}
     {\Large \scshape Ethan Villalovoz} \\ \vspace{1pt}
     {\small
-        \resumelink{tel:+15305581523}{+1 (530) 558-1523} $|$
+        \resumelink{tel:+15305581523}{(530) 558-1523} $|$
         \resumelink{mailto:ethan.villalovoz@gmail.com}{ethan.villalovoz@gmail.com} $|$
         \resumelink{https://www.linkedin.com/in/ethanvillalovoz/}{LinkedIn} $|$
         \resumelink{https://github.com/ethanvillalovoz}{GitHub} $|$
-        \resumelink{https://ethanvillalovoz.com}{ethanvillalovoz.com} $|$
-        U.S.~Citizen
+        \resumelink{https://ethanvillalovoz.com}{ethanvillalovoz.com}
     }
 \end{center}
 
@@ -132,12 +131,15 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Georgia Institute of Technology}{Jan 2026 -- May 2028}
+      {Georgia Institute of Technology}{Expected May 2028}
       {M.S. in Computer Science (Computational Perception \& Robotics) | GPA: 4.0/4.0}{Atlanta, GA}
 
     \resumeSubheading
       {Washington State University, Honors College}{Aug 2021 -- May 2025}
       {B.S. in Computer Science, Minor in Mathematics | GPA: 3.94/4.0, Summa Cum Laude}{Pullman, WA}
+      \resumeItemListStart
+        \resumeItem{\textbf{Honors \& Awards:} CS Research Mentorship Program Scholar, Google Research; Generation Google Scholarship}
+      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -146,44 +148,51 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Microsoft}{May 2026 -- Present}
-      {Software Engineer Intern}{Redmond, WA}
-      \resumeItemListStart
-        \resumeItem{Building a \textbf{multi-agent workflow system} that integrates agent orchestration into an internal cloud platform}
-      \resumeItemListEnd
-
-    \resumeSubheading
       {Georgia Institute of Technology}{Feb 2026 -- Present}
       {Graduate Student Researcher}{Atlanta, GA}
       \resumeItemListStart
-        \resumeItem{Developing a \textbf{video-to-action robot policy framework} on \textbf{WAN 2.2}, combining video diffusion, action flow matching, and \textbf{PyTorch/Hydra} pipelines for \textbf{LIBERO} rollouts}
+        \resumeItem{Adapting a \textbf{Wan2.2-TI2V-5B video-to-action codebase} to train and evaluate robot policies on \textbf{LIBERO} by adding dataset conversion, action normalization, and PyTorch/Hydra pipelines.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Washington State University}{Jan 2024 -- May 2025}
-      {Undergraduate Research Assistant}{Pullman, WA}
+      {Microsoft}{May 2026 -- Jul 2026}
+      {Software Engineer Intern}{Redmond, WA}
       \resumeItemListStart
-        \resumeItem{Built a test-driven \textbf{LLM code-generation} evaluation pipeline, measuring functional correctness on \textbf{164 HumanEval+} Python tasks by executing generated programs across three code LLMs}
-        \resumeItem{Validated \textbf{BODE-GEN} gains with reproducible benchmarks: \textbf{89\%} vs. \textbf{61--78\%} on ChatGPT-3.5, \textbf{50\%} vs. \textbf{22--38\%} on CodeLlama-7B, and \textbf{94\%} vs. \textbf{66--78\%} on DeepSeek-Coder-33B}
+        \resumeItem{Built a C\#/.NET 10 proof-of-concept \textbf{AI agent for financial close} using Azure AI Foundry, Azure OpenAI, and GraphQL APIs, giving users one natural-language interface to investigate blockers across multiple applications.}
+        \resumeItem{Cut measured AI inference cost about \textbf{30$\times$} while matching GPT-5.4 tool-routing quality by benchmarking 7 Azure OpenAI models, selecting GPT-5.4-nano, curating its tools, and correcting routing failures with targeted instructions.}
+        \resumeItem{Increased agent throughput about \textbf{22$\times$ (0.5 to 11 requests/second)} by load-testing concurrency, tracing throttling to undersized Azure OpenAI capacity, and resizing the deployment with no observed throttling failures.}
+        \resumeItem{Resolved \textbf{22 security findings} across two production repositories, including preventing unauthorized file access across four C\# endpoints through layered path and permission validation backed by 67 tests.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Carnegie Mellon University}{Jun 2024 -- Aug 2024}
       {Robotics Institute Summer Scholar}{Pittsburgh, PA}
       \resumeItemListStart
-        \resumeItem{Developed a \textbf{Bayesian reward-learning} system for a simulated dishwasher-loading robot, modeling preferences as \textbf{hierarchical decision-tree rewards} over object and placement attributes}
-        \resumeItem{Implemented \textbf{state-correction} and \textbf{feature-clarification} loops over \textbf{12 candidate preference models}, using simulated rollouts to identify the correct reward hypothesis}
+        \resumeItem{Developed a \textbf{Python Bayesian reward-learning simulation} for household robotics, modeling user preferences with hierarchical decision trees over object type, color, material, and placement.}
+        \resumeItem{Implemented an \textbf{interactive MDP} that updated beliefs from simulated object-placement corrections and follow-up feature questions, ranking the ground-truth preference model highest in a rollout.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Google}{May 2023 -- Aug 2023}
       {Software Engineering Intern (STEP)}{Sunnyvale, CA}
       \resumeItemListStart
-        \resumeItem{Developed and deployed \textbf{5 C++/SQL analytics jobs} to compute internal database queue metrics, replacing manual analysis with automated reporting for engineering stakeholders}
-        \resumeItem{Scaled metric computation from \textbf{1\%} to \textbf{100\%} dataset coverage within \textbf{4 hours}, reducing runtime by \textbf{66\%}; built internal \textbf{HTML/SQL dashboards} with live statistical summaries}
+        \resumeItem{Developed and deployed \textbf{5 C++/SQL statistics-collection jobs} for pending queues in an internal database, replacing manual analysis with automated metric reporting.}
+        \resumeItem{Scaled statistics collection from \textbf{1\% to 100\% of the database in under 4 hours} by implementing incremental job sampling, reducing anticipated runtime by 66\%.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\resumelink{https://knowledge-graph-rag.github.io/}{\textbf{Knowledge Graph RAG Assistant}} $|$ React, TypeScript, FastAPI, FAISS, DBpedia/SPARQL, OpenAI, Docker}{}
+          \resumeItemListStart
+            \resumeItem{Generated and indexed SentenceTransformer embeddings from \textbf{5GB+ of Wikipedia data} spanning \textbf{10{,}000+ articles} for a RAG assistant that answers questions using FAISS semantic search and DBpedia knowledge-graph context.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
 
 %-----------PUBLICATIONS-----------
 \section{Publications}
@@ -191,39 +200,27 @@
 
     \item \small{
       \resumelink{https://arxiv.org/abs/2512.15076}{\textbf{An Exploratory Study of Bayesian Prompt Optimization for Test-Driven Code Generation with Large Language Models}}.
-      S. Tomar, A. Deshwal, \textbf{E. Villalovoz}, M. Fazzini, H. Cai, J.R. Doppa.
+      S. Tomar, A. Deshwal, \textbf{E. Villalovoz}, M. Fazzini, H. Cai, J. R. Doppa.
       \emph{arXiv:2512.15076}, 2025.
     }
 
     \item \small{
       \resumelink{https://ethanvillalovoz.com/data/research/2023_OSU_Social_Triangles_and_Aggressive_Lines/2023_IROS_Social_Triangles_Agressive_Lines_bacula.pdf}{\textbf{Social Triangles and Aggressive Lines: Multi-Robot Formations Impact Navigation and Approach}}.
-      A. Bacula, \textbf{E. Villalovoz}, D. Flynn, A. Mehta, H. Knight.
+      A.~Bacula, \textbf{E.~Villalovoz}, D.~Flynn, A.~Mehta, H.~Knight.
       \emph{IROS}, 2023.
     }
 
   \end{itemize}
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-
-      \resumeProjectHeading
-          {\textbf{\resumelink{https://github.com/ethanvillalovoz/knowledge-graph-rag-assistant}{Knowledge Graph RAG Assistant}} $|$ {React/TS, FastAPI, FAISS, DBpedia, OpenAI, Docker}}{}
-          \resumeItemListStart
-            \resumeItem{Contributed to the retrieval stack for a full-stack \textbf{RAG application}, combining FastAPI, FAISS vector search, DBpedia/SPARQL context, and OpenAI responses; generated \textbf{5GB+} Wikipedia embeddings for \textbf{10{,}000+} articles}
-          \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0pt, label={}]
 
     \small{\item{
-     \textbf{Languages}{: Python, C/C++, SQL, TypeScript, JavaScript, HTML/CSS, C\#, MATLAB, Swift, GLSL} \\
-     \textbf{AI/ML \& Robotics}{: PyTorch, TensorFlow, scikit-learn, LightGBM, Hugging Face Transformers, FAISS, ROS, OpenCV} \\
-     \textbf{Web/Backend}{: React, Next.js, FastAPI, Flask, REST APIs, SQLite, MySQL, DBpedia/SPARQL} \\
-     \textbf{Developer Tools}{: Git, GitHub Actions, Docker, AWS, Bash, Conda, Jupyter, MLflow, DVC, Xcode}
+     \textbf{Languages \& Scripting}{: Python, C/C++, C\#, SQL, TypeScript, JavaScript, Bash, PowerShell} \\
+     \textbf{AI/ML \& Robotics}{: PyTorch, Hugging Face Transformers, scikit-learn, NumPy, FAISS, OpenCV, ROS} \\
+     \textbf{Web/Backend}{: .NET, ASP.NET Core, GraphQL, React, Next.js, FastAPI, Flask, REST APIs} \\
+     \textbf{Cloud \& Tools}{: Microsoft Azure, Azure AI Foundry, Azure OpenAI, AWS, Docker, Git, GitHub Actions}
     }}
 
  \end{itemize}

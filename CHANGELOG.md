@@ -4,6 +4,10 @@ All notable changes to the template are documented here.
 
 ## [Unreleased]
 
+### Changed
+
+- Updated the technical resume example and rendered preview to the finalized universal resume.
+
 ## [1.1.0] - 2026-07-11
 
 ### Added
